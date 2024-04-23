@@ -8,6 +8,7 @@ Explore each project individually and view live demos to see them in action:
 |  #  | Project                                                                | Live Demo                                                |
 | :-: | ---------------------------------------------------------------------- | -------------------------------------------------------- |
 | 001 | [Social Media Icons](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Social%20Media%20Icons)                               | [Live Demo](https://main--stupendous-chaja-8de6b1.netlify.app/)  |
+| 001 | [Login-Signup Form](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Login-Signup)                               | [Live Demo](https://html-css-js-projects-three.vercel.app/)  |
 
 ## Show Your Support
 
