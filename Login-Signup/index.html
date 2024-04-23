@@ -1,0 +1,78 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+<body>
+    
+    
+    <div id="container">
+        
+        
+        
+        
+        <div class="main" id="main">
+            
+           
+            
+            <input type="checkbox" id="chk">
+            <div class="signup">
+                <label for="chk" class="sig">Sign up</label>
+
+                <div class="user-box">
+                    <input type="text" title="Enter Username" id="username" required autocomplete="off">
+
+                    <label id="usernameLabel">Username</label>
+
+
+                    <img src="https://raw.githubusercontent.com/Ahmed-Massoud/Login-and-sign-up-form/main/logo.svg" alt="Logo" class="logo-img" id="userIcon" />
+
+
+                    <i></i>
+                </div>
+                <div class="user-box">
+                    <input type="text" title="Enter email" id="email" required autocomplete="off">
+                    <label id="emailLabel">Email</label>
+                    <img src="https://raw.githubusercontent.com/Ahmed-Massoud/Login-and-sign-up-form/main/logo.svg" alt="Logo" class="logo-img" id="emailIcon">
+                </div>
+                <div class="user-box">
+                    <input type="password" title="Enter password" id="password" required autocomplete="off">
+                    <label id="passwordLabel">Password</label>
+                    <img src="https://raw.githubusercontent.com/Ahmed-Massoud/Login-and-sign-up-form/main/logo.svg" alt="Logo" class="logo-img" id="passIcon">
+                </div>
+
+                <button onclick="check()" id="button">Sign up</button>
+
+            </div>
+
+            <div class="login">
+
+                <label for="chk" class="log">Login</label>
+
+
+
+                <div class="user-box">
+
+                    <input type="text" title="Enter Username" id="username2" required>
+
+                    <label>Username</label>
+
+                </div>
+
+                <div class="user-box">
+
+                    <input type="password" title="Enter password" id="password2" required>
+
+                    <label>Password</label>
+
+                </div>
+                <button onclick="login()" id="button2">Login</button>
+
+            </div>
+
+        </div>
+      <script src="script.js"></script>
+</body>

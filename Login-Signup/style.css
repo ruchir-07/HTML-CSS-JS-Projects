@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Red Hat Mono';
+  }
+  * {
+      font-family: 'Red Hat Mono', monospace;
+      margin: 0px;
+      padding: 0px;
+  }
+  
+  :root {
+      --First-color: #00000033;
+      --Second-color: #066;
+      --third-color: #077;
+  }
+  
+  body,
+  html {
+      width: 100%;
+      height: 100%;
+  }
+  
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-image: url("https://raw.githubusercontent.com/Ahmed-Massoud/Login-and-sign-up-form/main/background.svg"); */
+      background-color: #066;
+      background-size: cover;
+      background-position: center center;
+  
+  
+  }
+  
+  .main {
+      width: 320px;
+      background-color: var(--First-color);
+      height: 500px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 5px 20px 50px #000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -250px 0 0 -160px;
+      backdrop-filter: blur(30px);
+  
+  
+  }
+  
+  @media screen and (max-width: 320px) {
+      .main {
+          left: 160px;
+  
+      }
+  }
+  
+  @media screen and (max-height: 500px) {
+      .main {
+          top: 250px;
+  
+      }
+  }
+  .colorDiv{
+      color:#fff;
+      position:fixed;
+      width:40px;
+      height:40px;
+      top:20px;
+      left:0px;
+      background:#333;
+      z-index:1000;
+      border-radius:0px 10px 10px 0px;
+  }
+  .colorDiv input{
+      display:none;
+  }
+  .colorDiv label{
+  margin:10px;
+  display:inline-block;
+      width:20px;
+      height:20px;
+      background:#077;
+  }
+  
+  #chk {
+      display: none;
+  }
+  
+  .signup {
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .user-box {
+      position: relative;
+      width: 60%;
+      margin: 0px auto;
+  
+  
+  }
+  
+  button {
+      width: 60%;
+      height: 40px;
+      margin: 10px auto;
+      justify-content: center;
+      display: block;
+      color: #fff;
+      background-color: var(--third-color);
+      font-size: 1em;
+      font-weight: bold;
+      margin-top: 10px;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      transition: .2s ease-in;
+      cursor: pointer;
+  }
+  
+  button:hover {
+      background: #066;
+  }
+  
+  .login {
+      height: 470px;
+      background: #eee;
+      border-radius: 60% / 10%;
+      transform: translateY(-180px);
+      transition: .8s ease-in-out;
+  
+  
+  }
+  
+  #chk:checked~.login {
+      transform: translateY(-530px);
+  }
+  
+  #chk:checked~.login label {
+      transform: scale(1);
+  }
+  
+  #chk:checked~.signup .sig {
+      transform: scale(.6);
+      margin-top: 10px;
+  }
+  
+  .user-box label {
+      position: absolute;
+      top: 13px;
+      left: 0px;
+      font-size: 16px;
+      color: #fff;
+      pointer-events: none;
+      transition: .5s;
+  }
+  
+  .user-box .logo-img {
+      filter: invert(100%) sepia(0%) saturate(7448%) hue-rotate(136deg) brightness(112%) contrast(112%);
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 13px;
+      right: 0px;
+  
+  }
+  .user-box .logo-img:hover {
+  filter: invert(50%) sepia(0%) saturate(7448%) hue-rotate(136deg) brightness(112%) contrast(112%);
+  }
+  
+  .user-box input {
+      padding: 10px 0px;
+      padding-right: 17px;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none;
+      background: transparent;
+  }
+  
+  .user-box input:focus~label,
+  .user-box input:valid~label {
+      top: -20px;
+      left: 0;
+      font-size: 12px;
+      font-weight: bold;
+  }
+  
+  label[for="chk"] {
+      font-size: 2.3em;
+      justify-content: center;
+      display: flex;
+      font-weight: bold;
+      cursor: pointer;
+      transition: .5s ease-in-out;
+  }
+  
+  .sig {
+      color: #fff;
+      margin: 40px;
+  }
+  
+  .log {
+      margin: 80px;
+  }
+  
+  .login label,
+  .login input {
+      color: var(--third-color);
+  }
+  
+  .login input {
+      border-color: var(--third-color);
+  }
+  
