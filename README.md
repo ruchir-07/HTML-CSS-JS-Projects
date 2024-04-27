@@ -11,6 +11,7 @@ Explore each project individually and view live demos to see them in action:
 | 002 | [Login-Signup Form](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Login-Signup)                               | [Live Demo](https://html-css-js-projects-three.vercel.app/)  |
 | 003 | [Search Bar](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Search-Bar)                               | [Live Demo](https://html-css-js-projects-hdtd.vercel.app/)  |
 | 004 | [New Transaction](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/New-Transaction)                               | [Live Demo](https://main--moonlit-tapioca-eb1390.netlify.app/)  |
+| 005 | [3D-Card-Hover](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/3D-Card-Hover)                               | [Live Demo](https://musical-lokum-debb5e.netlify.app)  |
 
 ## Show Your Support
 
