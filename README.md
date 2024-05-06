@@ -14,6 +14,7 @@ Explore each project individually and view live demos to see them in action:
 | 005 | [3D-Card-Hover](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/3D-Card-Hover)                               | [Live Demo](https://musical-lokum-debb5e.netlify.app)  |
 | 006 | [Tooltip-Instagram](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Tooltip-instagram)                               | [Live Demo](https://ubiquitous-froyo-feecd3.netlify.app/)  |
 | 007 | [Balance-Slider](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Balance-Slider)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/PogrJMK)  |
+| 008 | [Balance-Slider](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Sneaky-Toggle-Switch)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/rNbXexJ)  |
 
 ## Show Your Support
 
