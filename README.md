@@ -16,6 +16,7 @@ Explore each project individually and view live demos to see them in action:
 | 007 | [Balance-Slider](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Balance-Slider)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/PogrJMK)  |
 | 008 | [Sneaky-Toggle-Switch](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Sneaky-Toggle-Switch)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/rNbXexJ)  |
 | 009 | [Loading-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Loading-Animation)                               | [Live Demo](https://codepen.io/cantelope/pen/WNWWjWP)  |
+| 010 | [GSAP-Slider](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/GSAP-Slider)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/WNBeRPg)  |
 
 ## Show Your Support
 
