@@ -17,6 +17,7 @@ Explore each project individually and view live demos to see them in action:
 | 008 | [Sneaky-Toggle-Switch](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Sneaky-Toggle-Switch)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/rNbXexJ)  |
 | 009 | [Loading-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Loading-Animation)                               | [Live Demo](https://codepen.io/cantelope/pen/WNWWjWP)  |
 | 010 | [GSAP-Slider](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/GSAP-Slider)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/WNBeRPg)  |
+| 011 | [ON/OFF PLUGS](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/ON-OFF-Plugs)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/VwNoxWX)  |
 
 ## Show Your Support
 
