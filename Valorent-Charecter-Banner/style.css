@@ -1,0 +1,501 @@
+
+* { padding: 0; margin: 0; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+:root { --white: #ffffff;--black: #000000;--light-t1:#CCC4ED;--text-color-1:rgba(187, 177, 231, 0.62);--text-color-2:rgba(154, 119, 35, 1);--text-color-3:rgba(3, 140, 54, 1);--text-color-4:#A395DF;--text-color-5:#9F91DE;--text-color-6:#826DFF;--text-color-7:#9A7723;--text-color-8:#EAA742;--text-color-9:#E9A742;--text-color-10:#C4893B;--text-color-11:#FFE0B7;--text-color-12:#DFA650;--text-color-13:#FFCA79;--border-color-2:#6B5536;--text-color-14:#038C36;--text-color-15:#04BC49;--text-color-16:#01AB3F;--text-color-17:#D4FFE4;}
+body {font-family:'VALORANT';font-size: 12px;line-height:18px; font-weight: 400; font-style: normal; width: 100%; height: 100%; padding: 0; margin:auto; max-width:2560px;background:var(--white);color:var(--text-color-1);}
+a { text-decoration: none; outline: none; color: var(--text-color-1); cursor: pointer; }
+a:hover { color: var(--text-color-1); }
+a, a:active, a:focus { outline: none; text-decoration: none; }
+img{border:none;max-width:100%;height:100%;object-fit:cover;object-position:center center;}
+ul,li{ padding:0; margin:0; }
+
+.custom-container{ padding: 0 32px; margin:0 auto; }
+
+h1{ font-family: 'Insomnia', sans-serif; font-size: 86px; font-style: normal; font-weight: 400; line-height: 104px; letter-spacing: 5.16px; background: linear-gradient(180deg, #6D4BE7 0%, #998BE5 90%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+h5{ font-size: 18px; font-style: normal; font-weight: 400; line-height: 22px; letter-spacing: 10.8px;color:var(--text-color-5); text-transform:uppercase; }
+h6{font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px; letter-spacing: 18.48px; color:var(--text-color-4); }
+
+/* -- Common Element CSS End -- */
+
+/* -- Cursor CSS Start -- */
+
+.cursor{ 
+  position: fixed; width: 40px;         height: 40px; margin-left: -20px;     margin-top: -20px; border-radius: 50%; border: 2px solid var(--text-color-6); transition: transform 0.3s ease; transform-origin: center center; pointer-events: none; z-index: 1000; }
+.header-section-orange .cursor{ border:2px solid var(--text-color-10); } 
+.header-section-green .cursor{ border:2px solid var(--text-color-14); } 
+.grow, .grow-small{ transform: scale(2); background:var(--white); opacity: 0.5; } 
+.grow-small{ transform: scale(2); }
+
+/* -- Cursor CSS End -- */
+
+/* -- Header Section CSS Start -- */
+
+.header-section-main { 
+  position: fixed; padding-top: 40px; width: 100%;z-index:99;}
+.header-section-inner{display:flex;justify-content:space-between;}
+.header-logo{flex-shrink:0;}
+.header-logo img{width:60px;height:60px;}
+.header-menu{width:80%;}
+.header-menu ul{display:flex;gap:90px;justify-content:end;list-style:none;}
+
+.header-menu ul li a { position: relative; font-size: 16px; line-height: 20px; font-weight: 400; text-transform: uppercase; font-style: normal; color: var(--text-color-1); display:inline-block; transition: 0.3s; -webkit-transition: 0.3s;} 
+.header-menu ul li a:hover,.header-menu ul li.active a{ color:var(--light-t1); }
+.header-menu ul li a:hover:after,.header-menu ul li.active a:after{ transform: translate(-50%,0); -webkit-transform: translate(-50%,0); opacity:1; } 
+.header-menu ul li a:after{ content:""; position:absolute; bottom:-50px; left:50%; display:block; background:url("https://www.yudiz.com/codepen/valorant-characters/menu-hover-icon.svg") center center / cover; width:70px; height:70px; transform:translate(-50%,30px); -webkit-transform:translate(-50%,30px); transition: 0.3s; -webkit-transition: 0.3s; opacity:0; }
+
+.header-right-icon{flex-shrink:0;}
+.header-right-icon img { width: 21px; height: 8px; }
+
+.header-section-orange .header-logo img { filter:hue-rotate(160deg); } 
+.header-section-orange .header-menu ul li a{ color:var(--text-color-7); } 
+.header-section-orange .header-right-icon img { filter: hue-rotate(141deg); } 
+.header-section-orange .header-menu ul li a:after { background:url(https://www.yudiz.com/codepen/valorant-characters/menu-hover-icon-2.svg) center center / cover; }
+.header-section-orange .header-menu ul li a:hover, .header-section-orange .header-menu ul li.active a {color:var(--text-color-8);}
+
+.header-section-green .header-logo img { filter:hue-rotate(197deg); } 
+.header-section-green .header-menu ul li a{ color:var(--text-color-14); } 
+.header-section-green .header-right-icon img { filter: hue-rotate(217deg); } 
+.header-section-green .header-menu ul li a:after { background:url(https://www.yudiz.com/codepen/valorant-characters/menu-hover-icon-3.svg) center center / cover; }
+.header-section-green .header-menu ul li a:hover, .header-section-green .header-menu ul li.active a {color:var(--text-color-14);}
+
+/* -- Header Section CSS End -- */
+
+/* -- Banner Section CSS Start -- */
+
+.banner-section-main{position:relative;z-index:9;overflow: hidden;}
+.banner-section-main .banner-section-loop{position: relative; padding-top:42px;display:flex;align-items:center;background:no-repeat top center / 100% 100%; width:100%;height:100vh;gap:20px;}
+.banner-left-vertical-main { width:calc(7% - 6.66px);display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:40px;} 
+.banner-main-img { width:calc(53% - 6.66px); align-self:end;max-height:865px;} 
+.banner-content-main{ width:calc(28% - 6.66px); padding-top:70px;} 
+.controller-right-icons-main { width:calc(12% - 15px);padding-right:15px;position:absolute;top:50%;right:0;transform:translateY(-50%);-webkit-transform:translateY(-50%);z-index:9999;}
+.controller-right-icons-main img{ width:62px; height:62px;margin-left: auto;margin-bottom:34px;cursor: pointer; transition: 0.3s; -webkit-transition: 0.3s;}
+.controller-right-icons-main .slick-track{width:100% !important;display:flex;flex-wrap:wrap;}
+.controller-right-icons-main .slick-slide{width:100%;}
+
+.banner-left-vertical-main h6{ writing-mode:vertical-rl; text-orientation:mixed;} 
+.banner-left-vertical-main img{ width:70px; height:70px;} 
+.banner-content-main h5{ padding-bottom:12px;} 
+.banner-section-loop .banner-content-main h1{display: inline-flex; padding-bottom:28px;}
+
+.controller-box-section { border: 1px solid var(--text-color-6); background: linear-gradient(180deg, rgba(68, 45, 142, 0.20) 0%, rgba(82, 51, 180, 0.09) 100%); padding: 19.771px 22.218px 20.229px 22.799px; display:flex; gap:15px; margin-bottom: 14px;} 
+.controller-box-img{ width:50px; height:50px; flex-shrink:0; } 
+.banner-content-main .controller-box-content h5{ letter-spacing:normal; padding-bottom:6px; } 
+.controller-icons-main { display: flex; gap: 18px; padding-bottom:45px; } 
+.controller-icons-inner { border: 1px solid var(--text-color-6); flex: 1;} 
+.controller-img { padding:18px; text-align:center;} 
+.controller-img img{aspect-ratio:1/1;width:100%; height:100%;margin: 0 auto; } 
+.controller-icons-inner p{ font-size:14px; line-height:16px; color:#BBB1E7; text-transform:uppercase; text-align:center; padding:3px; border-top: 1px solid var(--text-color-6); background: linear-gradient(180deg, rgba(68, 45, 142, 0.20) 0%, rgba(82, 51, 180, 0.09) 100%);} 
+.banner-section-loop .view-contract-btn-main{position:relative;display:block;background:url("https://www.yudiz.com/codepen/valorant-characters/button-bg.svg") no-repeat center center / cover;width:285px;height:65px;z-index: 1;cursor:pointer;}
+.banner-section-loop .view-contract-btn-main a{font-size:18px; line-height:22px; text-transform:uppercase; color: #CCC4ED;position:absolute;top:50%;left:40%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);display:block;}
+.banner-main-img .main-img{ position: relative;padding-top:78%;width:100%;z-index:1;transition: 0.3s;-webkit-transition: 0.3s;transform: translate(-50%,10%)!important;-webkit-transform: translate(-50%,10%) !important;left:65%;}
+.banner-main-img .main-img.character-animation{animation:character-animation 2s ease-in-out 1;}
+.banner-main-img img{ position:absolute !important; bottom:0; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%);height:100%;display:block;}
+
+.controller-right-icons-main .slick-current.slick-active img,.controller-right-icons-main .slick-active img:hover{ filter: drop-shadow(6px 6px 6px var(--text-color-4)); } 
+.controller-right-icons-main .slick-current.slick-active:nth-child(3n+2) img,.controller-right-icons-main .slick-active:nth-child(3n+2) img:hover{ filter: drop-shadow(6px 6px 6px var(--text-color-12)); } 
+.controller-right-icons-main .slick-current.slick-active:nth-child(3n+3) img,.controller-right-icons-main .slick-active:nth-child(3n+3) img:hover{ filter: drop-shadow(6px 6px 6px var(--text-color-14)); }
+
+/* -- Banner Section CSS End -- */
+
+/* -- Second Slide CSS Start -- */
+
+.banner-loop-second .banner-left-vertical-main h6 { color:var(--text-color-7); } 
+.banner-loop-second .banner-content-main h5 { color:var(--text-color-7); } 
+.banner-loop-second .controller-box-content h5{ color:var(--text-color-9) } 
+.banner-loop-second .controller-box-content p{ color:var(--text-color-10) } 
+.banner-loop-second .controller-box-section { border: 1px solid var(--border-color-2); background: linear-gradient(180deg, rgba(101, 75, 37, 0.13) 0%, rgba(246, 186, 98, 0.05) 100%); }
+.banner-loop-second .controller-icons-inner { border: 1px solid var(--border-color-2); } 
+.banner-loop-second .controller-icons-inner p { border-top: 1px solid var(--border-color-2); background: linear-gradient(180deg, rgba(130, 99, 55, 0.13) 0%, rgba(221, 170, 95, 0.17) 100%); color:var(--text-color-10);} 
+.banner-loop-second .view-contract-btn-main{background-image:url("https://www.yudiz.com/codepen/valorant-characters/button-bg-2.svg");}
+.banner-loop-second .view-contract-btn-main a{  color: var(--text-color-11); } 
+.banner-loop-second .banner-content-main h1 { background: linear-gradient(180deg, var(--text-color-12) 0%, var(--text-color-13) 90%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.banner-loop-second .controller-right-icons-main img { filter: hue-rotate(358deg); -webkit-filter: hue-rotate(358deg); }
+
+/* -- Second Slide CSS End -- */
+
+/* -- Third Slide CSS Start -- */
+
+.banner-loop-third .banner-left-vertical-main h6 { color:var(--text-color-14) } 
+.banner-loop-third .banner-content-main h5 { color: var(--text-color-14) } 
+.banner-loop-third .banner-content-main h1 { background: linear-gradient(180deg, var(--text-color-15) 0%, var(--text-color-14) 90%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; } 
+.banner-loop-third .controller-box-content p { color: var(--text-color-14); } 
+.banner-loop-third .controller-box-section { border: 1px solid var(--text-color-14); background: linear-gradient(180deg, rgba(2, 157, 56, 0.08) 0%, rgba(6, 167, 61, 0.05) 100%); } 
+.banner-loop-third .controller-icons-inner { border: 1px solid var(--text-color-16); } 
+.banner-loop-third .controller-icons-inner p { border-top: 1px solid rgba(1, 171, 63, 0.00); background: linear-gradient(180deg, rgba(2, 157, 56, 0.08) 0%, rgba(6, 167, 61, 0.01) 100%); color:var(--text-color-14); } 
+.banner-loop-third .view-contract-btn-main{background-image:url("https://www.yudiz.com/codepen/valorant-characters/button-bg-3.svg");}
+.banner-loop-third .view-contract-btn-main a { color:var(--text-color-17);}
+
+/* -- Third Slide CSS End -- */
+
+/* Rain Css Start -- */
+
+.rain { background: white; background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%); height: 50px; position: absolute; width: 3px; z-index: 9998; opacity:0; } 
+.rain:nth-of-type(1) { animation-name: rain-1; animation-delay: 18s; animation-duration: 9s; animation-iteration-count: infinite; left: 10%; opacity: 0.53; top: -75%; } 
+@keyframes rain-1 { from { left: 10%; opacity: 0.53; top: -75%; } to { opacity: 0; top: 115%; } } 
+.rain:nth-of-type(2) { animation-name: rain-2; animation-delay: 8s; animation-duration: 9s; animation-iteration-count: infinite; left: 76%; opacity: 0.45; top: -64%; } 
+@keyframes rain-2 { from { left: 76%; opacity: 0.45; top: -64%; } to { opacity: 0; top: 104%; } } 
+.rain:nth-of-type(3) { animation-name: rain-3; animation-delay: 13s; animation-duration: 5s; animation-iteration-count: infinite; left: 1%; opacity: 0.38; top: -62%; } 
+@keyframes rain-3 { from { left: 1%; opacity: 0.38; top: -62%; } to { opacity: 0; top: 102%; } } 
+.rain:nth-of-type(4) { animation-name: rain-4; animation-delay: 0s; animation-duration: 8s; animation-iteration-count: infinite; left: 73%; opacity: 0.53; top: -78%; } 
+@keyframes rain-4 { from { left: 73%; opacity: 0.53; top: -78%; } to { opacity: 0; top: 118%; } } .rain:nth-of-type(5) { animation-name: rain-5; animation-delay: 2s; animation-duration: 9s; animation-iteration-count: infinite; left: 7%; opacity: 0.45; top: -53%; } 
+@keyframes rain-5 { from { left: 7%; opacity: 0.45; top: -53%; } to { opacity: 0; top: 93%; } }
+.rain:nth-of-type(6) { animation-name: rain-6; animation-delay: 1s; animation-duration: 10s; animation-iteration-count: infinite; left: 33%; opacity: 0.31; top: -77%; } 
+@keyframes rain-6 { from { left: 33%; opacity: 0.31; top: -77%; } to { opacity: 0; top: 117%; } } 
+.rain:nth-of-type(7) { animation-name: rain-7; animation-delay: 18s; animation-duration: 9s; animation-iteration-count: infinite; left: 38%; opacity: 0.39; top: -51%; } 
+@keyframes rain-7 { from { left: 38%; opacity: 0.39; top: -51%; } to { opacity: 0; top: 91%; } } 
+.rain:nth-of-type(8) { animation-name: rain-8; animation-delay: 16s; animation-duration: 8s; animation-iteration-count: infinite; left: 37%; opacity: 0.45; top: -79%; } 
+@keyframes rain-8 { from { left: 37%; opacity: 0.45; top: -79%; } to { opacity: 0; top: 119%; } } 
+.rain:nth-of-type(9) { animation-name: rain-9; animation-delay: 3s; animation-duration: 5s; animation-iteration-count: infinite; left: 91%; opacity: 0.33; top: -94%; } 
+@keyframes rain-9 { from { left: 91%; opacity: 0.33; top: -94%; } to { opacity: 0; top: 134%; } } 
+.rain:nth-of-type(10) { animation-name: rain-10; animation-delay: 10s; animation-duration: 8s; animation-iteration-count: infinite; left: 31%; opacity: 0.57; top: -90%; } 
+@keyframes rain-10 { from { left: 31%; opacity: 0.57; top: -90%; } to { opacity: 0; top: 130%; } } 
+.rain:nth-of-type(11) { animation-name: rain-11; animation-delay: 17s; animation-duration: 5s; animation-iteration-count: infinite; left: 96%; opacity: 0.46; top: -91%; } 
+@keyframes rain-11 { from { left: 96%; opacity: 0.46; top: -91%; } to { opacity: 0; top: 131%; } } 
+.rain:nth-of-type(12) { animation-name: rain-12; animation-delay: 14s; animation-duration: 10s; animation-iteration-count: infinite; left: 80%; opacity: 0.59; top: -77%; } 
+@keyframes rain-12 { from { left: 80%; opacity: 0.59; top: -77%; } to { opacity: 0; top: 117%; } } 
+.rain:nth-of-type(13) { animation-name: rain-13; animation-delay: 16s; animation-duration: 10s; animation-iteration-count: infinite; left: 56%; opacity: 0.33; top: -60%; } 
+@keyframes rain-13 { from { left: 56%; opacity: 0.33; top: -60%; } to { opacity: 0; top: 100%; } } 
+.rain:nth-of-type(14) { animation-name: rain-14; animation-delay: 8s; animation-duration: 10s; animation-iteration-count: infinite; left: 28%; opacity: 0.45; top: -70%; } 
+@keyframes rain-14 { from { left: 28%; opacity: 0.45; top: -70%; } to { opacity: 0; top: 110%; } } 
+.rain:nth-of-type(15) { animation-name: rain-15; animation-delay: 5s; animation-duration: 6s; animation-iteration-count: infinite; left: 44%; opacity: 0.34; top: -75%; } 
+@keyframes rain-15 { from { left: 44%; opacity: 0.34; top: -75%; } to { opacity: 0; top: 115%; } } 
+.rain:nth-of-type(16) { animation-name: rain-16; animation-delay: 7s; animation-duration: 6s; animation-iteration-count: infinite; left: 24%; opacity: 0.44; top: -79%; }
+@keyframes rain-16 { from { left: 24%; opacity: 0.44; top: -79%; } to { opacity: 0; top: 119%; } } 
+.rain:nth-of-type(17) { animation-name: rain-17; animation-delay: 14s; animation-duration: 7s; animation-iteration-count: infinite; left: 26%; opacity: 0.49; top: -62%; } 
+@keyframes rain-17 { from { left: 26%; opacity: 0.49; top: -62%; } to { opacity: 0; top: 102%; } } 
+.rain:nth-of-type(18) { animation-name: rain-18; animation-delay: 15s; animation-duration: 6s; animation-iteration-count: infinite; left: 98%; opacity: 0.46; top: -81%; } 
+@keyframes rain-18 { from { left: 98%; opacity: 0.46; top: -81%; } to { opacity: 0; top: 121%; } } 
+.rain:nth-of-type(19) { animation-name: rain-19; animation-delay: 8s; animation-duration: 7s; animation-iteration-count: infinite; left: 68%; opacity: 0.5; top: -73%; } 
+@keyframes rain-19 { from { left: 68%; opacity: 0.5; top: -73%; } to { opacity: 0; top: 113%; } } 
+.rain:nth-of-type(20) { animation-name: rain-20; animation-delay: 1s; animation-duration: 8s; animation-iteration-count: infinite; left: 44%; opacity: 0.47; top: -57%; } 
+@keyframes rain-20 { from { left: 44%; opacity: 0.47; top: -57%; } to { opacity: 0; top: 97%; } } 
+.rain:nth-of-type(21) { animation-name: rain-21; animation-delay: 5s; animation-duration: 5s; animation-iteration-count: infinite; left: 25%; opacity: 0.42; top: -100%; } 
+@keyframes rain-21 { from { left: 25%; opacity: 0.42; top: -100%; } to { opacity: 0; top: 140%; } } 
+.rain:nth-of-type(22) { animation-name: rain-22; animation-delay: 11s; animation-duration: 7s; animation-iteration-count: infinite; left: 91%; opacity: 0.37; top: -96%; } 
+@keyframes rain-22 { from { left: 91%; opacity: 0.37; top: -96%; } to { opacity: 0; top: 136%; } } 
+.rain:nth-of-type(23) { animation-name: rain-23; animation-delay: 7s; animation-duration: 8s; animation-iteration-count: infinite; left: 29%; opacity: 0.56; top: -98%; } 
+@keyframes rain-23 { from { left: 29%; opacity: 0.56; top: -98%; } to { opacity: 0; top: 138%; } } 
+.rain:nth-of-type(24) { animation-name: rain-24; animation-delay: 8s; animation-duration: 7s; animation-iteration-count: infinite; left: 65%; opacity: 0.42; top: -70%; } 
+@keyframes rain-24 { from { left: 65%; opacity: 0.42; top: -70%; } to { opacity: 0; top: 110%; } } 
+.rain:nth-of-type(25) { animation-name: rain-25; animation-delay: 11s; animation-duration: 10s; animation-iteration-count: infinite; left: 7%; opacity: 0.34; top: -82%; } 
+@keyframes rain-25 { from { left: 7%; opacity: 0.34; top: -82%; } to { opacity: 0; top: 122%; } } 
+.rain:nth-of-type(26) { animation-name: rain-26; animation-delay: 12s; animation-duration: 8s; animation-iteration-count: infinite; left: 48%; opacity: 0.45; top: -90%; } 
+@keyframes rain-26 { from { left: 48%; opacity: 0.45; top: -90%; } to { opacity: 0; top: 130%; } } 
+.rain:nth-of-type(27) { animation-name: rain-27; animation-delay: 3s; animation-duration: 10s; animation-iteration-count: infinite; left: 43%; opacity: 0.34; top: -81%; } 
+@keyframes rain-27 { from { left: 43%; opacity: 0.34; top: -81%; } to { opacity: 0; top: 121%; } } 
+.rain:nth-of-type(28) { animation-name: rain-28; animation-delay: 15s; animation-duration: 6s; animation-iteration-count: infinite; left: 96%; opacity: 0.54; top: -99%; } 
+@keyframes rain-28 { from { left: 96%; opacity: 0.54; top: -99%; } to { opacity: 0; top: 139%; } } 
+.rain:nth-of-type(29) { animation-name: rain-29; animation-delay: 15s; animation-duration: 7s; animation-iteration-count: infinite; left: 99%; opacity: 0.54; top: -95%; } 
+@keyframes rain-29 { from { left: 99%; opacity: 0.54; top: -95%; } to { opacity: 0; top: 135%; } } 
+.rain:nth-of-type(30) { animation-name: rain-30; animation-delay: 0s; animation-duration: 8s; animation-iteration-count: infinite; left: 1%; opacity: 0.33; top: -78%; } 
+@keyframes rain-30 { from { left: 1%; opacity: 0.33; top: -78%; } to { opacity: 0; top: 118%; } } 
+.rain:nth-of-type(31) { animation-name: rain-31; animation-delay: 7s; animation-duration: 10s; animation-iteration-count: infinite; left: 3%; opacity: 0.49; top: -68%; } 
+@keyframes rain-31 { from { left: 3%; opacity: 0.49; top: -68%; } to { opacity: 0; top: 108%; } } 
+.rain:nth-of-type(32) { animation-name: rain-32; animation-delay: 15s; animation-duration: 10s; animation-iteration-count: infinite; left: 9%; opacity: 0.35; top: -53%; } 
+@keyframes rain-32 { from { left: 9%; opacity: 0.35; top: -53%; } to { opacity: 0; top: 93%; } } 
+.rain:nth-of-type(33) { animation-name: rain-33; animation-delay: 9s; animation-duration: 8s; animation-iteration-count: infinite; left: 68%; opacity: 0.43; top: -58%; } 
+@keyframes rain-33 { from { left: 68%; opacity: 0.43; top: -58%; } to { opacity: 0; top: 98%; } } 
+.rain:nth-of-type(34) { animation-name: rain-34; animation-delay: 13s; animation-duration: 9s; animation-iteration-count: infinite; left: 1%; opacity: 0.6; top: -54%; } 
+@keyframes rain-34 { from { left: 1%; opacity: 0.6; top: -54%; } to { opacity: 0; top: 94%; } } 
+.rain:nth-of-type(35) { animation-name: rain-35; animation-delay: 18s; animation-duration: 7s; animation-iteration-count: infinite; left: 22%; opacity: 0.32; top: -63%; } 
+@keyframes rain-35 { from { left: 22%; opacity: 0.32; top: -63%; } to { opacity: 0; top: 103%; } } 
+.rain:nth-of-type(36) { animation-name: rain-36; animation-delay: 11s; animation-duration: 8s; animation-iteration-count: infinite; left: 55%; opacity: 0.42; top: -64%; } 
+@keyframes rain-36 { from { left: 55%; opacity: 0.42; top: -64%; } to { opacity: 0; top: 104%; } } 
+.rain:nth-of-type(37) { animation-name: rain-37; animation-delay: 13s; animation-duration: 5s; animation-iteration-count: infinite; left: 20%; opacity: 0.39; top: -78%; } 
+@keyframes rain-37 { from { left: 20%; opacity: 0.39; top: -78%; } to { opacity: 0; top: 118%; } } 
+.rain:nth-of-type(38) { animation-name: rain-38; animation-delay: 18s; animation-duration: 9s; animation-iteration-count: infinite; left: 70%; opacity: 0.38; top: -68%; } 
+@keyframes rain-38 { from { left: 70%; opacity: 0.38; top: -68%; } to { opacity: 0; top: 108%; } } 
+.rain:nth-of-type(39) { animation-name: rain-39; animation-delay: 12s; animation-duration: 7s; animation-iteration-count: infinite; left: 73%; opacity: 0.52; top: -64%; } 
+@keyframes rain-39 { from { left: 73%; opacity: 0.52; top: -64%; } to { opacity: 0; top: 104%; } } 
+.rain:nth-of-type(40) { animation-name: rain-40; animation-delay: 9s; animation-duration: 10s; animation-iteration-count: infinite; left: 60%; opacity: 0.49; top: -71%; } 
+@keyframes rain-40 { from { left: 60%; opacity: 0.49; top: -71%; } to { opacity: 0; top: 111%; } } 
+.rain:nth-of-type(41) { animation-name: rain-41; animation-delay: 15s; animation-duration: 9s; animation-iteration-count: infinite; left: 13%; opacity: 0.6; top: -71%; } 
+@keyframes rain-41 { from { left: 13%; opacity: 0.6; top: -71%; } to { opacity: 0; top: 111%; } } 
+.rain:nth-of-type(42) { animation-name: rain-42; animation-delay: 6s; animation-duration: 5s; animation-iteration-count: infinite; left: 60%; opacity: 0.55; top: -79%; } 
+@keyframes rain-42 { from { left: 60%; opacity: 0.55; top: -79%; } to { opacity: 0; top: 119%; } } 
+.rain:nth-of-type(43) { animation-name: rain-43; animation-delay: 13s; animation-duration: 10s; animation-iteration-count: infinite; left: 22%; opacity: 0.32; top: -66%; } 
+@keyframes rain-43 { from { left: 22%; opacity: 0.32; top: -66%; } to { opacity: 0; top: 106%; } } 
+.rain:nth-of-type(44) { animation-name: rain-44; animation-delay: 10s; animation-duration: 10s; animation-iteration-count: infinite; left: 59%; opacity: 0.58; top: -54%; } 
+@keyframes rain-44 { from { left: 59%; opacity: 0.58; top: -54%; } to { opacity: 0; top: 94%; } } 
+.rain:nth-of-type(45) { animation-name: rain-45; animation-delay: 8s; animation-duration: 8s; animation-iteration-count: infinite; left: 88%; opacity: 0.32; top: -60%; } 
+@keyframes rain-45 { from { left: 88%; opacity: 0.32; top: -60%; } to { opacity: 0; top: 100%; } } 
+.rain:nth-of-type(46) { animation-name: rain-46; animation-delay: 4s; animation-duration: 8s; animation-iteration-count: infinite; left: 42%; opacity: 0.47; top: -94%; } 
+@keyframes rain-46 { from { left: 42%; opacity: 0.47; top: -94%; } to { opacity: 0; top: 134%; } } 
+.rain:nth-of-type(47) { animation-name: rain-47; animation-delay: 5s; animation-duration: 7s; animation-iteration-count: infinite; left: 100%; opacity: 0.49; top: -95%; } 
+@keyframes rain-47 { from { left: 100%; opacity: 0.49; top: -95%; } to { opacity: 0; top: 135%; } } 
+.rain:nth-of-type(48) { animation-name: rain-48; animation-delay: 17s; animation-duration: 7s; animation-iteration-count: infinite; left: 8%; opacity: 0.31; top: -85%; } 
+@keyframes rain-48 { from { left: 8%; opacity: 0.31; top: -85%; } to { opacity: 0; top: 125%; } } 
+.rain:nth-of-type(49) { animation-name: rain-49; animation-delay: 7s; animation-duration: 10s; animation-iteration-count: infinite; left: 14%; opacity: 0.48; top: -87%; } 
+@keyframes rain-49 { from { left: 14%; opacity: 0.48; top: -87%; } to { opacity: 0; top: 127%; } } 
+.rain:nth-of-type(50) { animation-name: rain-50; animation-delay: 9s; animation-duration: 5s; animation-iteration-count: infinite; left: 84%; opacity: 0.47; top: -66%; } 
+@keyframes rain-50 { from { left: 84%; opacity: 0.47; top: -66%; } to { opacity: 0; top: 106%; } } 
+.rain:nth-of-type(51) { animation-name: rain-51; animation-delay: 15s; animation-duration: 10s; animation-iteration-count: infinite; left: 75%; opacity: 0.36; top: -66%; } 
+@keyframes rain-51 { from { left: 75%; opacity: 0.36; top: -66%; } to { opacity: 0; top: 106%; } } 
+.rain:nth-of-type(52) { animation-name: rain-52; animation-delay: 0s; animation-duration: 8s; animation-iteration-count: infinite; left: 59%; opacity: 0.32; top: -100%; } 
+@keyframes rain-52 { from { left: 59%; opacity: 0.32; top: -100%; } to { opacity: 0; top: 140%; } } 
+.rain:nth-of-type(53) { animation-name: rain-53; animation-delay: 6s; animation-duration: 9s; animation-iteration-count: infinite; left: 62%; opacity: 0.31; top: -59%; } 
+@keyframes rain-53 { from { left: 62%; opacity: 0.31; top: -59%; } to { opacity: 0; top: 99%; } } 
+.rain:nth-of-type(54) { animation-name: rain-54; animation-delay: 4s; animation-duration: 7s; animation-iteration-count: infinite; left: 46%; opacity: 0.6; top: -82%; } 
+@keyframes rain-54 { from { left: 46%; opacity: 0.6; top: -82%; } to { opacity: 0; top: 122%; } } 
+.rain:nth-of-type(55) { animation-name: rain-55; animation-delay: 6s; animation-duration: 7s; animation-iteration-count: infinite; left: 96%; opacity: 0.31; top: -84%; } 
+@keyframes rain-55 { from { left: 96%; opacity: 0.31; top: -84%; } to { opacity: 0; top: 124%; } } 
+.rain:nth-of-type(56) { animation-name: rain-56; animation-delay: 6s; animation-duration: 6s; animation-iteration-count: infinite; left: 82%; opacity: 0.34; top: -59%; } 
+@keyframes rain-56 { from { left: 82%; opacity: 0.34; top: -59%; } to { opacity: 0; top: 99%; } } 
+.rain:nth-of-type(57) { animation-name: rain-57; animation-delay: 13s; animation-duration: 8s; animation-iteration-count: infinite; left: 45%; opacity: 0.31; top: -63%; } 
+@keyframes rain-57 { from { left: 45%; opacity: 0.31; top: -63%; } to { opacity: 0; top: 103%; } } 
+.rain:nth-of-type(58) { animation-name: rain-58; animation-delay: 15s; animation-duration: 8s; animation-iteration-count: infinite; left: 1%; opacity: 0.55; top: -77%; } 
+@keyframes rain-58 { from { left: 1%; opacity: 0.55; top: -77%; } to { opacity: 0; top: 117%; } } 
+.rain:nth-of-type(59) { animation-name: rain-59; animation-delay: 16s; animation-duration: 9s; animation-iteration-count: infinite; left: 12%; opacity: 0.49; top: -84%; } 
+@keyframes rain-59 { from { left: 12%; opacity: 0.49; top: -84%; } to { opacity: 0; top: 124%; } } 
+.rain:nth-of-type(60) { animation-name: rain-60; animation-delay: 13s; animation-duration: 6s; animation-iteration-count: infinite; left: 98%; opacity: 0.37; top: -69%; } 
+@keyframes rain-60 { from { left: 98%; opacity: 0.37; top: -69%; } to { opacity: 0; top: 109%; } } 
+.rain:nth-of-type(61) { animation-name: rain-61; animation-delay: 9s; animation-duration: 5s; animation-iteration-count: infinite; left: 72%; opacity: 0.32; top: -83%; } 
+@keyframes rain-61 { from { left: 72%; opacity: 0.32; top: -83%; } to { opacity: 0; top: 123%; } } 
+.rain:nth-of-type(62) { animation-name: rain-62; animation-delay: 4s; animation-duration: 5s; animation-iteration-count: infinite; left: 14%; opacity: 0.46; top: -79%; } 
+@keyframes rain-62 { from { left: 14%; opacity: 0.46; top: -79%; } to { opacity: 0; top: 119%; } } 
+.rain:nth-of-type(63) { animation-name: rain-63; animation-delay: 18s; animation-duration: 10s; animation-iteration-count: infinite; left: 21%; opacity: 0.35; top: -53%; } 
+@keyframes rain-63 { from { left: 21%; opacity: 0.35; top: -53%; } to { opacity: 0; top: 93%; } } 
+.rain:nth-of-type(64) { animation-name: rain-64; animation-delay: 17s; animation-duration: 10s; animation-iteration-count: infinite; left: 68%; opacity: 0.37; top: -89%; } 
+@keyframes rain-64 { from { left: 68%; opacity: 0.37; top: -89%; } to { opacity: 0; top: 129%; } } 
+.rain:nth-of-type(65) { animation-name: rain-65; animation-delay: 13s; animation-duration: 7s; animation-iteration-count: infinite; left: 26%; opacity: 0.55; top: -88%; } 
+@keyframes rain-65 { from { left: 26%; opacity: 0.55; top: -88%; } to { opacity: 0; top: 128%; } } 
+.rain:nth-of-type(66) { animation-name: rain-66; animation-delay: 4s; animation-duration: 6s; animation-iteration-count: infinite; left: 99%; opacity: 0.34; top: -69%; } 
+@keyframes rain-66 { from { left: 99%; opacity: 0.34; top: -69%; } to { opacity: 0; top: 109%; } } 
+.rain:nth-of-type(67) { animation-name: rain-67; animation-delay: 4s; animation-duration: 8s; animation-iteration-count: infinite; left: 2%; opacity: 0.52; top: -61%; } 
+@keyframes rain-67 { from { left: 2%; opacity: 0.52; top: -61%; } to { opacity: 0; top: 101%; } } 
+.rain:nth-of-type(68) { animation-name: rain-68; animation-delay: 1s; animation-duration: 9s; animation-iteration-count: infinite; left: 87%; opacity: 0.53; top: -100%; } 
+@keyframes rain-68 { from { left: 87%; opacity: 0.53; top: -100%; } to { opacity: 0; top: 140%; } } 
+.rain:nth-of-type(69) { animation-name: rain-69; animation-delay: 17s; animation-duration: 6s; animation-iteration-count: infinite; left: 95%; opacity: 0.38; top: -52%; } 
+@keyframes rain-69 { from { left: 95%; opacity: 0.38; top: -52%; } to { opacity: 0; top: 92%; } } 
+.rain:nth-of-type(70) { animation-name: rain-70; animation-delay: 10s; animation-duration: 7s; animation-iteration-count: infinite; left: 96%; opacity: 0.37; top: -76%; } 
+@keyframes rain-70 { from { left: 96%; opacity: 0.37; top: -76%; } to { opacity: 0; top: 116%; } } 
+.rain:nth-of-type(71) { animation-name: rain-71; animation-delay: 17s; animation-duration: 7s; animation-iteration-count: infinite; left: 44%; opacity: 0.33; top: -100%; } 
+@keyframes rain-71 { from { left: 44%; opacity: 0.33; top: -100%; } to { opacity: 0; top: 140%; } } 
+.rain:nth-of-type(72) { animation-name: rain-72; animation-delay: 5s; animation-duration: 7s; animation-iteration-count: infinite; left: 7%; opacity: 0.55; top: -95%; } 
+@keyframes rain-72 { from { left: 7%; opacity: 0.55; top: -95%; } to { opacity: 0; top: 135%; } } 
+.rain:nth-of-type(73) { animation-name: rain-73; animation-delay: 7s; animation-duration: 6s; animation-iteration-count: infinite; left: 1%; opacity: 0.37; top: -82%; } 
+@keyframes rain-73 { from { left: 1%; opacity: 0.37; top: -82%; } to { opacity: 0; top: 122%; } } 
+.rain:nth-of-type(74) { animation-name: rain-74; animation-delay: 12s; animation-duration: 10s; animation-iteration-count: infinite; left: 99%; opacity: 0.37; top: -69%; } 
+@keyframes rain-74 { from { left: 99%; opacity: 0.37; top: -69%; } to { opacity: 0; top: 109%; } } 
+.rain:nth-of-type(75) { animation-name: rain-75; animation-delay: 3s; animation-duration: 6s; animation-iteration-count: infinite; left: 2%; opacity: 0.31; top: -93%; } 
+@keyframes rain-75 { from { left: 2%; opacity: 0.31; top: -93%; } to { opacity: 0; top: 133%; } } 
+.rain:nth-of-type(76) { animation-name: rain-76; animation-delay: 5s; animation-duration: 7s; animation-iteration-count: infinite; left: 93%; opacity: 0.33; top: -69%; } 
+@keyframes rain-76 { from { left: 93%; opacity: 0.33; top: -69%; } to { opacity: 0; top: 109%; } } 
+.rain:nth-of-type(77) { animation-name: rain-77; animation-delay: 1s; animation-duration: 5s; animation-iteration-count: infinite; left: 48%; opacity: 0.54; top: -87%; } 
+@keyframes rain-77 { from { left: 48%; opacity: 0.54; top: -87%; } to { opacity: 0; top: 127%; } } 
+.rain:nth-of-type(78) { animation-name: rain-78; animation-delay: 3s; animation-duration: 10s; animation-iteration-count: infinite; left: 45%; opacity: 0.48; top: -65%; } 
+@keyframes rain-78 { from { left: 45%; opacity: 0.48; top: -65%; } to { opacity: 0; top: 105%; } } 
+.rain:nth-of-type(79) { animation-name: rain-79; animation-delay: 4s; animation-duration: 9s; animation-iteration-count: infinite; left: 67%; opacity: 0.6; top: -74%; } 
+@keyframes rain-79 { from { left: 67%; opacity: 0.6; top: -74%; } to { opacity: 0; top: 114%; } } 
+.rain:nth-of-type(80) { animation-name: rain-80; animation-delay: 12s; animation-duration: 5s; animation-iteration-count: infinite; left: 8%; opacity: 0.42; top: -94%; } 
+@keyframes rain-80 { from { left: 8%; opacity: 0.42; top: -94%; } to { opacity: 0; top: 134%; } } 
+.rain:nth-of-type(81) { animation-name: rain-81; animation-delay: 3s; animation-duration: 5s; animation-iteration-count: infinite; left: 37%; opacity: 0.54; top: -77%; } 
+@keyframes rain-81 { from { left: 37%; opacity: 0.54; top: -77%; } to { opacity: 0; top: 117%; } } 
+.rain:nth-of-type(82) { animation-name: rain-82; animation-delay: 8s; animation-duration: 8s; animation-iteration-count: infinite; left: 61%; opacity: 0.59; top: -74%; } 
+@keyframes rain-82 { from { left: 61%; opacity: 0.59; top: -74%; } to { opacity: 0; top: 114%; } } 
+.rain:nth-of-type(83) { animation-name: rain-83; animation-delay: 10s; animation-duration: 5s; animation-iteration-count: infinite; left: 44%; opacity: 0.45; top: -77%; } 
+@keyframes rain-83 { from { left: 44%; opacity: 0.45; top: -77%; } to { opacity: 0; top: 117%; } } 
+.rain:nth-of-type(84) { animation-name: rain-84; animation-delay: 17s; animation-duration: 10s; animation-iteration-count: infinite; left: 97%; opacity: 0.56; top: -85%; } 
+@keyframes rain-84 { from { left: 97%; opacity: 0.56; top: -85%; } to { opacity: 0; top: 125%; } } 
+.rain:nth-of-type(85) { animation-name: rain-85; animation-delay: 14s; animation-duration: 5s; animation-iteration-count: infinite; left: 84%; opacity: 0.32; top: -82%; } 
+@keyframes rain-85 { from { left: 84%; opacity: 0.32; top: -82%; } to { opacity: 0; top: 122%; } } 
+.rain:nth-of-type(86) { animation-name: rain-86; animation-delay: 17s; animation-duration: 7s; animation-iteration-count: infinite; left: 57%; opacity: 0.42; top: -85%; } 
+@keyframes rain-86 { from { left: 57%; opacity: 0.42; top: -85%; } to { opacity: 0; top: 125%; } } 
+.rain:nth-of-type(87) { animation-name: rain-87; animation-delay: 14s; animation-duration: 9s; animation-iteration-count: infinite; left: 65%; opacity: 0.55; top: -73%; } 
+@keyframes rain-87 { from { left: 65%; opacity: 0.55; top: -73%; } to { opacity: 0; top: 113%; } } 
+.rain:nth-of-type(88) { animation-name: rain-88; animation-delay: 19s; animation-duration: 8s; animation-iteration-count: infinite; left: 18%; opacity: 0.45; top: -73%; } 
+@keyframes rain-88 { from { left: 18%; opacity: 0.45; top: -73%; } to { opacity: 0; top: 113%; } } 
+.rain:nth-of-type(89) { animation-name: rain-89; animation-delay: 16s; animation-duration: 9s; animation-iteration-count: infinite; left: 51%; opacity: 0.38; top: -77%; } 
+@keyframes rain-89 { from { left: 51%; opacity: 0.38; top: -77%; } to { opacity: 0; top: 117%; } } 
+.rain:nth-of-type(90) { animation-name: rain-90; animation-delay: 8s; animation-duration: 6s; animation-iteration-count: infinite; left: 91%; opacity: 0.41; top: -62%; } 
+@keyframes rain-90 { from { left: 91%; opacity: 0.41; top: -62%; } to { opacity: 0; top: 102%; } } 
+.rain:nth-of-type(91) { animation-name: rain-91; animation-delay: 2s; animation-duration: 10s; animation-iteration-count: infinite; left: 54%; opacity: 0.45; top: -51%; } 
+@keyframes rain-91 { from { left: 54%; opacity: 0.45; top: -51%; } to { opacity: 0; top: 91%; } } 
+.rain:nth-of-type(92) { animation-name: rain-92; animation-delay: 16s; animation-duration: 6s; animation-iteration-count: infinite; left: 67%; opacity: 0.52; top: -76%; } 
+@keyframes rain-92 { from { left: 67%; opacity: 0.52; top: -76%; } to { opacity: 0; top: 116%; } } 
+.rain:nth-of-type(93) { animation-name: rain-93; animation-delay: 14s; animation-duration: 7s; animation-iteration-count: infinite; left: 2%; opacity: 0.6; top: -65%; } 
+@keyframes rain-93 { from { left: 2%; opacity: 0.6; top: -65%; } to { opacity: 0; top: 105%; } } 
+.rain:nth-of-type(94) { animation-name: rain-94; animation-delay: 5s; animation-duration: 8s; animation-iteration-count: infinite; left: 88%; opacity: 0.43; top: -74%; } 
+@keyframes rain-94 { from { left: 88%; opacity: 0.43; top: -74%; } to { opacity: 0; top: 114%; } } 
+.rain:nth-of-type(95) { animation-name: rain-95; animation-delay: 13s; animation-duration: 6s; animation-iteration-count: infinite; left: 61%; opacity: 0.38; top: -74%; } 
+@keyframes rain-95 { from { left: 61%; opacity: 0.38; top: -74%; } to { opacity: 0; top: 114%; } } 
+.rain:nth-of-type(96) { animation-name: rain-96; animation-delay: 5s; animation-duration: 7s; animation-iteration-count: infinite; left: 40%; opacity: 0.36; top: -93%; } 
+@keyframes rain-96 { from { left: 40%; opacity: 0.36; top: -93%; } to { opacity: 0; top: 133%; } } 
+.rain:nth-of-type(97) { animation-name: rain-97; animation-delay: 10s; animation-duration: 9s; animation-iteration-count: infinite; left: 56%; opacity: 0.41; top: -73%; } 
+@keyframes rain-97 { from { left: 56%; opacity: 0.41; top: -73%; } to { opacity: 0; top: 113%; } } 
+.rain:nth-of-type(98) { animation-name: rain-98; animation-delay: 14s; animation-duration: 7s; animation-iteration-count: infinite; left: 85%; opacity: 0.45; top: -59%; } 
+@keyframes rain-98 { from { left: 85%; opacity: 0.45; top: -59%; } to { opacity: 0; top: 99%; } } 
+.rain:nth-of-type(99) { animation-name: rain-99; animation-delay: 9s; animation-duration: 6s; animation-iteration-count: infinite; left: 78%; opacity: 0.43; top: -63%; } 
+@keyframes rain-99 { from { left: 78%; opacity: 0.43; top: -63%; } to { opacity: 0; top: 103%; } } 
+.rain:nth-of-type(100) { animation-name: rain-100; animation-delay: 14s; animation-duration: 6s; animation-iteration-count: infinite; left: 100%; opacity: 0.46; top: -54%; } 
+@keyframes rain-100 { from { left: 100%; opacity: 0.46; top: -54%; } to { opacity: 0; top: 94%; } } 
+.rain:nth-of-type(101) { animation-name: rain-101; animation-delay: 16s; animation-duration: 10s; animation-iteration-count: infinite; left: 34%; opacity: 0.55; top: -97%; } 
+@keyframes rain-101 { from { left: 34%; opacity: 0.55; top: -97%; } to { opacity: 0; top: 137%; } } 
+.rain:nth-of-type(102) { animation-name: rain-102; animation-delay: 4s; animation-duration: 5s; animation-iteration-count: infinite; left: 59%; opacity: 0.35; top: -58%; } 
+@keyframes rain-102 { from { left: 59%; opacity: 0.35; top: -58%; } to { opacity: 0; top: 98%; } } 
+.rain:nth-of-type(103) { animation-name: rain-103; animation-delay: 13s; animation-duration: 9s; animation-iteration-count: infinite; left: 47%; opacity: 0.32; top: -95%; } 
+@keyframes rain-103 { from { left: 47%; opacity: 0.32; top: -95%; } to { opacity: 0; top: 135%; } } 
+.rain:nth-of-type(104) { animation-name: rain-104; animation-delay: 3s; animation-duration: 8s; animation-iteration-count: infinite; left: 5%; opacity: 0.45; top: -99%; } 
+@keyframes rain-104 { from { left: 5%; opacity: 0.45; top: -99%; } to { opacity: 0; top: 139%; } } 
+.rain:nth-of-type(105) { animation-name: rain-105; animation-delay: 17s; animation-duration: 9s; animation-iteration-count: infinite; left: 13%; opacity: 0.34; top: -100%; } 
+@keyframes rain-105 { from { left: 13%; opacity: 0.34; top: -100%; } to { opacity: 0; top: 140%; } } 
+.rain:nth-of-type(106) { animation-name: rain-106; animation-delay: 19s; animation-duration: 9s; animation-iteration-count: infinite; left: 61%; opacity: 0.48; top: -64%; } 
+@keyframes rain-106 { from { left: 61%; opacity: 0.48; top: -64%; } to { opacity: 0; top: 104%; } } 
+.rain:nth-of-type(107) { animation-name: rain-107; animation-delay: 13s; animation-duration: 5s; animation-iteration-count: infinite; left: 21%; opacity: 0.56; top: -86%; } 
+@keyframes rain-107 { from { left: 21%; opacity: 0.56; top: -86%; } to { opacity: 0; top: 126%; } } 
+.rain:nth-of-type(108) { animation-name: rain-108; animation-delay: 18s; animation-duration: 9s; animation-iteration-count: infinite; left: 84%; opacity: 0.39; top: -93%; } 
+@keyframes rain-108 { from { left: 84%; opacity: 0.39; top: -93%; } to { opacity: 0; top: 133%; } } 
+.rain:nth-of-type(109) { animation-name: rain-109; animation-delay: 1s; animation-duration: 7s; animation-iteration-count: infinite; left: 95%; opacity: 0.5; top: -55%; } 
+@keyframes rain-109 { from { left: 95%; opacity: 0.5; top: -55%; } to { opacity: 0; top: 95%; } } 
+.rain:nth-of-type(110) { animation-name: rain-110; animation-delay: 3s; animation-duration: 7s; animation-iteration-count: infinite; left: 19%; opacity: 0.38; top: -65%; } 
+@keyframes rain-110 { from { left: 19%; opacity: 0.38; top: -65%; } to { opacity: 0; top: 105%; } } 
+.rain:nth-of-type(111) { animation-name: rain-111; animation-delay: 18s; animation-duration: 8s; animation-iteration-count: infinite; left: 91%; opacity: 0.35; top: -60%; } 
+@keyframes rain-111 { from { left: 91%; opacity: 0.35; top: -60%; } to { opacity: 0; top: 100%; } } 
+.rain:nth-of-type(112) { animation-name: rain-112; animation-delay: 19s; animation-duration: 8s; animation-iteration-count: infinite; left: 36%; opacity: 0.54; top: -69%; } 
+@keyframes rain-112 { from { left: 36%; opacity: 0.54; top: -69%; } to { opacity: 0; top: 109%; } } 
+.rain:nth-of-type(113) { animation-name: rain-113; animation-delay: 7s; animation-duration: 7s; animation-iteration-count: infinite; left: 79%; opacity: 0.51; top: -53%; } 
+@keyframes rain-113 { from { left: 79%; opacity: 0.51; top: -53%; } to { opacity: 0; top: 93%; } } 
+.rain:nth-of-type(114) { animation-name: rain-114; animation-delay: 15s; animation-duration: 5s; animation-iteration-count: infinite; left: 62%; opacity: 0.43; top: -54%; } 
+@keyframes rain-114 { from { left: 62%; opacity: 0.43; top: -54%; } to { opacity: 0; top: 94%; } } 
+.rain:nth-of-type(115) { animation-name: rain-115; animation-delay: 6s; animation-duration: 8s; animation-iteration-count: infinite; left: 93%; opacity: 0.48; top: -63%; } 
+@keyframes rain-115 { from { left: 93%; opacity: 0.48; top: -63%; } to { opacity: 0; top: 103%; } } 
+.rain:nth-of-type(116) { animation-name: rain-116; animation-delay: 10s; animation-duration: 10s; animation-iteration-count: infinite; left: 52%; opacity: 0.32; top: -93%; } 
+@keyframes rain-116 { from { left: 52%; opacity: 0.32; top: -93%; } to { opacity: 0; top: 133%; } } 
+.rain:nth-of-type(117) { animation-name: rain-117; animation-delay: 16s; animation-duration: 10s; animation-iteration-count: infinite; left: 44%; opacity: 0.31; top: -94%; } 
+@keyframes rain-117 { from { left: 44%; opacity: 0.31; top: -94%; } to { opacity: 0; top: 134%; } } 
+.rain:nth-of-type(118) { animation-name: rain-118; animation-delay: 3s; animation-duration: 6s; animation-iteration-count: infinite; left: 63%; opacity: 0.58; top: -95%; } 
+@keyframes rain-118 { from { left: 63%; opacity: 0.58; top: -95%; } to { opacity: 0; top: 135%; } } 
+.rain:nth-of-type(119) { animation-name: rain-119; animation-delay: 17s; animation-duration: 8s; animation-iteration-count: infinite; left: 6%; opacity: 0.35; top: -95%; } 
+@keyframes rain-119 { from { left: 6%; opacity: 0.35; top: -95%; } to { opacity: 0; top: 135%; } } 
+.rain:nth-of-type(120) { animation-name: rain-120; animation-delay: 19s; animation-duration: 7s; animation-iteration-count: infinite; left: 3%; opacity: 0.55; top: -75%; } 
+@keyframes rain-120 { from { left: 3%; opacity: 0.55; top: -75%; } to { opacity: 0; top: 115%; } } 
+.rain:nth-of-type(121) { animation-name: rain-121; animation-delay: 2s; animation-duration: 7s; animation-iteration-count: infinite; left: 15%; opacity: 0.31; top: -55%; } 
+@keyframes rain-121 { from { left: 15%; opacity: 0.31; top: -55%; } to { opacity: 0; top: 95%; } } 
+.rain:nth-of-type(122) { animation-name: rain-122; animation-delay: 6s; animation-duration: 9s; animation-iteration-count: infinite; left: 39%; opacity: 0.6; top: -67%; } 
+@keyframes rain-122 { from { left: 39%; opacity: 0.6; top: -67%; } to { opacity: 0; top: 107%; } } 
+.rain:nth-of-type(123) { animation-name: rain-123; animation-delay: 7s; animation-duration: 10s; animation-iteration-count: infinite; left: 56%; opacity: 0.34; top: -85%; } 
+@keyframes rain-123 { from { left: 56%; opacity: 0.34; top: -85%; } to { opacity: 0; top: 125%; } } 
+.rain:nth-of-type(124) { animation-name: rain-124; animation-delay: 13s; animation-duration: 9s; animation-iteration-count: infinite; left: 4%; opacity: 0.52; top: -67%; } 
+@keyframes rain-124 { from { left: 4%; opacity: 0.52; top: -67%; } to { opacity: 0; top: 107%; } } 
+.rain:nth-of-type(125) { animation-name: rain-125; animation-delay: 6s; animation-duration: 5s; animation-iteration-count: infinite; left: 69%; opacity: 0.49; top: -63%; } 
+@keyframes rain-125 { from { left: 69%; opacity: 0.49; top: -63%; } to { opacity: 0; top: 103%; } } 
+.rain:nth-of-type(126) { animation-name: rain-126; animation-delay: 3s; animation-duration: 10s; animation-iteration-count: infinite; left: 8%; opacity: 0.47; top: -65%; } 
+@keyframes rain-126 { from { left: 8%; opacity: 0.47; top: -65%; } to { opacity: 0; top: 105%; } } 
+.rain:nth-of-type(127) { animation-name: rain-127; animation-delay: 9s; animation-duration: 9s; animation-iteration-count: infinite; left: 90%; opacity: 0.45; top: -82%; } 
+@keyframes rain-127 { from { left: 90%; opacity: 0.45; top: -82%; } to { opacity: 0; top: 122%; } } 
+.rain:nth-of-type(128) { animation-name: rain-128; animation-delay: 16s; animation-duration: 10s; animation-iteration-count: infinite; left: 61%; opacity: 0.31; top: -71%; } 
+@keyframes rain-128 { from { left: 61%; opacity: 0.31; top: -71%; } to { opacity: 0; top: 111%; } } 
+.rain:nth-of-type(129) { animation-name: rain-129; animation-delay: 9s; animation-duration: 8s; animation-iteration-count: infinite; left: 84%; opacity: 0.35; top: -76%; } 
+@keyframes rain-129 { from { left: 84%; opacity: 0.35; top: -76%; } to { opacity: 0; top: 116%; } } 
+.rain:nth-of-type(130) { animation-name: rain-130; animation-delay: 18s; animation-duration: 7s; animation-iteration-count: infinite; left: 35%; opacity: 0.5; top: -60%; } 
+@keyframes rain-130 { from { left: 35%; opacity: 0.5; top: -60%; } to { opacity: 0; top: 100%; } } 
+.rain:nth-of-type(131) { animation-name: rain-131; animation-delay: 0s; animation-duration: 8s; animation-iteration-count: infinite; left: 63%; opacity: 0.52; top: -77%; } 
+@keyframes rain-131 { from { left: 63%; opacity: 0.52; top: -77%; } to { opacity: 0; top: 117%; } } 
+.rain:nth-of-type(132) { animation-name: rain-132; animation-delay: 1s; animation-duration: 5s; animation-iteration-count: infinite; left: 33%; opacity: 0.56; top: -94%; } 
+@keyframes rain-132 { from { left: 33%; opacity: 0.56; top: -94%; } to { opacity: 0; top: 134%; } } 
+.rain:nth-of-type(133) { animation-name: rain-133; animation-delay: 16s; animation-duration: 6s; animation-iteration-count: infinite; left: 87%; opacity: 0.46; top: -58%; } 
+@keyframes rain-133 { from { left: 87%; opacity: 0.46; top: -58%; } to { opacity: 0; top: 98%; } } 
+.rain:nth-of-type(134) { animation-name: rain-134; animation-delay: 1s; animation-duration: 9s; animation-iteration-count: infinite; left: 31%; opacity: 0.35; top: -67%; } 
+@keyframes rain-134 { from { left: 31%; opacity: 0.35; top: -67%; } to { opacity: 0; top: 107%; } } 
+.rain:nth-of-type(135) { animation-name: rain-135; animation-delay: 11s; animation-duration: 5s; animation-iteration-count: infinite; left: 45%; opacity: 0.32; top: -68%; } 
+@keyframes rain-135 { from { left: 45%; opacity: 0.32; top: -68%; } to { opacity: 0; top: 108%; } } 
+.rain:nth-of-type(136) { animation-name: rain-136; animation-delay: 14s; animation-duration: 6s; animation-iteration-count: infinite; left: 26%; opacity: 0.43; top: -54%; } 
+@keyframes rain-136 { from { left: 26%; opacity: 0.43; top: -54%; } to { opacity: 0; top: 94%; } } 
+.rain:nth-of-type(137) { animation-name: rain-137; animation-delay: 12s; animation-duration: 8s; animation-iteration-count: infinite; left: 14%; opacity: 0.59; top: -98%; } 
+@keyframes rain-137 { from { left: 14%; opacity: 0.59; top: -98%; } to { opacity: 0; top: 138%; } } 
+.rain:nth-of-type(138) { animation-name: rain-138; animation-delay: 1s; animation-duration: 7s; animation-iteration-count: infinite; left: 99%; opacity: 0.55; top: -70%; } 
+@keyframes rain-138 { from { left: 99%; opacity: 0.55; top: -70%; } to { opacity: 0; top: 110%; } } 
+.rain:nth-of-type(139) { animation-name: rain-139; animation-delay: 8s; animation-duration: 9s; animation-iteration-count: infinite; left: 45%; opacity: 0.35; top: -93%; } 
+@keyframes rain-139 { from { left: 45%; opacity: 0.35; top: -93%; } to { opacity: 0; top: 133%; } } 
+.rain:nth-of-type(140) { animation-name: rain-140; animation-delay: 13s; animation-duration: 8s; animation-iteration-count: infinite; left: 69%; opacity: 0.33; top: -52%; } 
+@keyframes rain-140 { from { left: 69%; opacity: 0.33; top: -52%; } to { opacity: 0; top: 92%; } } 
+.rain:nth-of-type(141) { animation-name: rain-141; animation-delay: 2s; animation-duration: 8s; animation-iteration-count: infinite; left: 51%; opacity: 0.47; top: -91%; } 
+@keyframes rain-141 { from { left: 51%; opacity: 0.47; top: -91%; } to { opacity: 0; top: 131%; } } 
+.rain:nth-of-type(142) { animation-name: rain-142; animation-delay: 0s; animation-duration: 7s; animation-iteration-count: infinite; left: 86%; opacity: 0.51; top: -81%; } 
+@keyframes rain-142 { from { left: 86%; opacity: 0.51; top: -81%; } to { opacity: 0; top: 121%; } } 
+.rain:nth-of-type(143) { animation-name: rain-143; animation-delay: 11s; animation-duration: 10s; animation-iteration-count: infinite; left: 62%; opacity: 0.54; top: -73%; } 
+@keyframes rain-143 { from { left: 62%; opacity: 0.54; top: -73%; } to { opacity: 0; top: 113%; } } 
+.rain:nth-of-type(144) { animation-name: rain-144; animation-delay: 7s; animation-duration: 8s; animation-iteration-count: infinite; left: 84%; opacity: 0.39; top: -65%; } 
+@keyframes rain-144 { from { left: 84%; opacity: 0.39; top: -65%; } to { opacity: 0; top: 105%; } } 
+.rain:nth-of-type(145) { animation-name: rain-145; animation-delay: 17s; animation-duration: 6s; animation-iteration-count: infinite; left: 4%; opacity: 0.33; top: -80%; } 
+@keyframes rain-145 { from { left: 4%; opacity: 0.33; top: -80%; } to { opacity: 0; top: 120%; } } 
+.rain:nth-of-type(146) { animation-name: rain-146; animation-delay: 7s; animation-duration: 9s; animation-iteration-count: infinite; left: 29%; opacity: 0.6; top: -73%; } 
+@keyframes rain-146 { from { left: 29%; opacity: 0.6; top: -73%; } to { opacity: 0; top: 113%; } } 
+.rain:nth-of-type(147) { animation-name: rain-147; animation-delay: 5s; animation-duration: 7s; animation-iteration-count: infinite; left: 54%; opacity: 0.4; top: -88%; } 
+@keyframes rain-147 { from { left: 54%; opacity: 0.4; top: -88%; } to { opacity: 0; top: 128%; } } 
+.rain:nth-of-type(148) { animation-name: rain-148; animation-delay: 15s; animation-duration: 7s; animation-iteration-count: infinite; left: 93%; opacity: 0.42; top: -99%; } 
+@keyframes rain-148 { from { left: 93%; opacity: 0.42; top: -99%; } to { opacity: 0; top: 139%; } } 
+.rain:nth-of-type(149) { animation-name: rain-149; animation-delay: 17s; animation-duration: 9s; animation-iteration-count: infinite; left: 14%; opacity: 0.58; top: -62%; } 
+@keyframes rain-149 { from { left: 14%; opacity: 0.58; top: -62%; } to { opacity: 0; top: 102%; } } 
+.rain:nth-of-type(150) { animation-name: rain-150; animation-delay: 1s; animation-duration: 7s; animation-iteration-count: infinite; left: 32%; opacity: 0.6; top: -80%; } 
+@keyframes rain-150 { from { left: 32%; opacity: 0.6; top: -80%; } to { opacity: 0; top: 120%; } }
+/* Rain Css End -- */
+
+@media only screen and (max-width: 1600px) {
+
+    /* -- Header Section CSS Start -- */
+    
+    .header-section-main { padding-top:35px; }
+    .header-menu ul li a:after {bottom:-60px;} 
+
+    /* -- Header Section CSS End -- */
+    
+    /* -- Banner Section CSS Start -- */
+
+    .banner-left-vertical-main { margin-top:0; } 
+    .banner-left-vertical-main h6 { letter-spacing:16px; } 
+    .banner-left-vertical-main img { width: 60px; height: 60px; }
+    .banner-content-main h5 { font-size:16px; line-height:20px; }
+    .banner-section-loop .banner-content-main h1 { font-size:70px; line-height:80px; } 
+    .banner-section-loop .banner-content-main h1 { padding-bottom: 24px; } 
+    .controller-box-img { width: 45px; height: 45px; } 
+    .controller-box-section { padding:15px; margin-bottom: 12px; } 
+    .controller-img { padding: 14px; }
+    .controller-icons-main { gap:16px; padding-bottom: 35px; } 
+    .banner-section-loop .view-contract-btn-main a { font-size:16px; line-height:20px;} 
+    .controller-right-icons-main img { width:55px; height:55px; margin-bottom:25px; }
+
+    /* -- Banner Section CSS End -- */
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) and (max-height:620px) {
+    
+    /* -- Banner Section CSS Start -- */
+
+    .banner-main-img { max-height:620px; }
+    .banner-left-vertical-main h6 { letter-spacing: 10px; }
+
+    /* -- Banner Section CSS End -- */
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+    /* -- Header Section CSS Start -- */
+    
+    .header-section-main { padding-top: 30px; }
+    .header-menu ul li a:after {bottom: -56px;}
+    .header-menu ul {gap:70px;}
+    .custom-container { padding: 0 18px; }
+    
+    /* -- Header Section CSS End -- */
+   
+    /* -- Banner Section CSS Start -- */
+
+    .banner-main-img { width: calc(50% - 6.66px); } 
+    .banner-content-main { width: calc(30% - 6.66px); }
+    .controller-right-icons-main { width: calc(10% - 8px); padding-right: 8px; }
+    .banner-section-loop .banner-content-main h1 { font-size: 55px; line-height: 65px;padding-bottom: 20px; }
+    .controller-box-img { width: 40px; height: 40px; }
+    .controller-box-section { padding: 12px; margin-bottom: 10px; }
+    .banner-content-main h5 { font-size:14px; line-height:18px; }
+    .controller-img { padding: 12px; }
+    .controller-icons-main { gap: 14px; padding-bottom: 30px; }
+    .banner-section-loop .view-contract-btn-main{ width: 240px; height: 55px; }
+    .banner-section-loop .view-contract-btn-main a {font-size: 14px; line-height: 18px;}
+    .controller-right-icons-main img { width: 50px; height: 50px; margin-bottom: 20px; }
+    .banner-main-img .main-img {padding-top:100%;}
+    
+    /* -- Banner Section CSS End -- */ 
+     
+}
