@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+$yellow: #ffbf00;
+$yellow--light: #ffdc73;
+$gold: #d4af37;
+$gold--dark: #a67c00;
+$black: #000038;
+$grey: #888;
+$white: #fff;
+$light-blue: #78d6c6;
+$dark-blue: #12486b;
+$green: #80c0a1;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient($white -100%, $grey);
+  font-family: "Arial Black", "Archivo Black", sans-serif;
+  overflow: hidden;
+  cursor: none;
+}
+
+.scratch-win {
+  position: relative;
+  padding: 1rem 2rem 2rem 2rem;
+  background: linear-gradient($light-blue -150%, $dark-blue);
+  border: 0.2rem solid $yellow--light;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0.2rem 0.2rem 1rem 0 rgba($black, 0.3);
+  @media screen and (max-width: 500px) {
+    padding-left: 0;
+    padding-right: 0;
+    &__coin {
+      transform: scale(0.8);
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      -70deg,
+      transparent,
+      transparent 50%,
+      rgba($white, 0.1) 57%,
+      transparent 60%
+    );
+    background-size: 300% 100%;
+    @keyframes shinning {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 100% 0;
+      }
+    }
+    animation: shinning;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    pointer-events: none;
+  }
+  &__title {
+    width: 100%;
+    margin: 0 auto 1rem;
+    color: $yellow--light;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient($yellow--light, $gold--dark);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__scratcher {
+    position: relative;
+    width: 20rem;
+    height: 10rem;
+  }
+  &__background,
+  &__foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__background {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: $grey;
+    background-color: $white;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        transparent,
+        transparent 0.5rem,
+        $grey 0.5rem,
+        $grey 0.6rem
+      );
+      opacity: 0.5;
+    }
+  }
+  &--ready .scratch-win__background {
+    display: flex;
+  }
+  &__coin {
+    position: absolute;
+    z-index: 2;
+    top: calc(var(--top) - 5rem);
+    left: calc(var(--left) - 3rem);
+    width: 6rem;
+    height: 6rem;
+    pointer-events: none;
+  }
+  &__coin-side {
+    position: absolute;
+    top: -0.4rem;
+    left: 0;
+    z-index: -1;
+    width: calc(100% + 0.6rem);
+    height: calc(100% + 0.6rem);
+    border-radius: 50%;
+    outline: 0.1rem solid $gold--dark;
+    @supports (-webkit-hyphens: none) {
+      // removing outline in Safari
+      outline: none;
+    }
+    background: repeating-linear-gradient(
+      90deg,
+      $gold 0,
+      $gold 0.5rem,
+      $yellow--light 0.5rem,
+      $yellow--light 0.7rem
+    );
+    box-shadow: 0 1rem 1rem -0.5rem rgba($black, 0.5);
+  }
+  &__coin-base {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0.3rem dashed $gold;
+    outline: 0.1rem solid $gold--dark;
+    @supports (-webkit-hyphens: none) {
+      // removing outline in Safari
+      outline: none;
+    }
+    border-radius: 50%;
+    background: radial-gradient(circle at 0 0, $yellow--light, $gold 150%);
+    box-shadow: inset 0 -0.1rem 0 0 $gold--dark;
+    &:before,
+    &:after {
+      content: "€";
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      font-size: 4rem;
+    }
+    &:before {
+      color: $gold--dark;
+      transform: rotate(45deg) translateX(-0.4rem) translateY(-0.25rem);
+    }
+    &:after {
+      color: $gold;
+      transform: rotate(45deg) translateX(-0.3rem) translateY(-0.2rem);
+      background: -webkit-linear-gradient($yellow--light -50%, $gold);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  --top-position: -350vh;
+  &__item {
+    position: absolute;
+    box-shadow: 1rem 1rem 1rem 0 rgba($black, 0.5);
+    // Positioning confetti
+    $confetti-number: 120;
+    @for $i from 1 through $confetti-number {
+      &:nth-child(#{$i}) {
+        top: calc(#{random()} * 150% + var(--top-position));
+        left: calc(#{random()} * 100%);
+        transform: scale(max(#{random() * 5}, 2)) rotate(#{random() * 90}deg);
+      }
+    }
+  }
+  &--active {
+    --top-position: 200vh;
+    .confetti__item {
+      transition: top 10s ease;
+      &:nth-child(3n) {
+        transition: top 8s ease;
+      }
+      &:nth-child(4n) {
+        transition: top 12s ease;
+      }
+    }
+  }
+}
