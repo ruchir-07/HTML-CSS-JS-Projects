@@ -20,6 +20,7 @@ Explore each project individually and view live demos to see them in action:
 | 011 | [ON/OFF PLUGS](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/ON-OFF-Plugs)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/VwNoxWX)  |
 | 012 | [Scratch And Win](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Scratch-And-Win)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/eYoqrWZ)  |
 | 013 | [Valorant-Charecter-Banner](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Valorent-Charecter-Banner)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/OJYLJaQ)  |
+| 014 | [GSAP-Logo-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/GSAP-Logo-Animation)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/jOoNzZK)  |
 
 ## Show Your Support
 

@@ -1,0 +1,120 @@
+$blk: #0D1317;
+
+body {
+	background-color: $blk;
+}
+
+.logo {
+	display: flex;
+	height: auto;
+	left: 50%;
+	max-width: 37vw;
+	position: absolute;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 484px;
+	
+	svg {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.logo-g,
+.logo-sap {
+	height: 100%;
+	width: 100%;
+	z-index: 4;
+}
+
+.logo-g {
+	position: relative;
+
+	&:before {
+		background: $blk;
+		bottom: 0;
+		content: "";
+		left: 0;
+		position: absolute;
+		top: 0;
+		transform: translateX(-85%);
+		width: 50%;
+		z-index: -1;
+	}
+}
+
+.logo-sap {
+	position: absolute;
+}
+
+.logo-g-line,
+.logo-g-end {
+	height: auto;
+	left: 14%;
+	position: absolute;
+	top: 45%;
+	width: 156.4%;
+	z-index: 3;
+}
+
+.logo-g-line {
+	overflow: hidden;
+	transform: translateX(2%);
+	
+	svg {
+		transform: translateX(-92%);
+	}
+}
+
+.logo-plane {
+	height: 32.9%;
+	opacity: 0;
+	position: absolute;
+	width: 25.8%;
+	z-index: 2;
+}
+
+.logo-path {
+	bottom: 51%;
+	height: 178%;
+  left: -59%;
+	position: absolute;
+	width: 147.3%;
+	z-index: 1;
+	
+	svg {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	
+	path {
+		visibility: hidden;
+	}
+	
+	.offset-1,
+	.offset-3 {
+		transform: translateX(-.5%) translateY(-.5%);
+	}
+	
+	.offset-2,
+	.offset-4 {
+		transform: translateX(.5%) translateY(.5%);
+	}
+}
+
+.audio-toggle {
+	appearance: none;
+	background: #05F34A;
+	border: none;
+	bottom: 20px;
+	cursor: pointer;
+	font-size: 14px;
+	left: 50%;
+	padding: 13px 20px;
+	position: fixed;
+	transform: translateX(-50%);
+}
