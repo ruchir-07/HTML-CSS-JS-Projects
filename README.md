@@ -23,7 +23,8 @@ Explore each project individually and view live demos to see them in action:
 | 014 | [GSAP-Logo-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/GSAP-Logo-Animation)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/jOoNzZK)  |
 | 015 | [Infinite-Logo-Marquee](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Infinite-Logo-Marquee)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/JjqPLpj)  |
 | 016 | [Star-Wars-Product-Slider](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Star-Wars-Product-Slider)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/GRaRJag)  |
-| 016 | [Progress-Bar](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Progress-Bar)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/RwmNbvO)  |
+| 017 | [Progress-Bar](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Progress-Bar)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/RwmNbvO)  |
+| 018 | [Parallax-3d-Carousel](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Parallax-3d-Carousel)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/yLWLNro)  |
 
 ## Show Your Support
 
