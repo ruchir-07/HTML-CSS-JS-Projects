@@ -1,4 +1,3 @@
-// give back the value between -100% & 100%
 const normVal = (percentage, min, max) => {
     return 1 * ((percentage / 100) * (max - min) + min).toFixed(0);
   }

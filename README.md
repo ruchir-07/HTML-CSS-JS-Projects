@@ -26,6 +26,8 @@ Explore each project individually and view live demos to see them in action:
 | 017 | [Progress-Bar](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Progress-Bar)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/RwmNbvO)  |
 | 018 | [Parallax-3d-Carousel](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Parallax-3d-Carousel)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/yLWLNro)  |
 | 019 | [Cyber-Truck-Ride](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Cyber-Truck-Ride)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/RwmNbOO)  |
+| 020 | [Background-Text-Marquee](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Background-Text-Marquee)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/KKLpMma)  |
+| 021 | [Card-Reveal-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Card-Reveal-Animation)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/details/KKLpMXW)  |
 
 ## Show Your Support
 

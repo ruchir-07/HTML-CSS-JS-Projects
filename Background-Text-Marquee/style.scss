@@ -1,0 +1,99 @@
+#pause {
+	border: 2px solid #2a899b;
+	background: #fff;
+	color: #2a899b;
+	font-weight: bold;
+	font-size: 1rem;
+	padding: 10px 20px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 10;
+	
+	&[aria-pressed='true'] {
+		background: #2a899b;
+		color: #fff;
+	}
+}
+
+.marquee {	
+	font-size: clamp(4rem,20vw,7rem);
+	letter-spacing: 0.05em;
+	overflow: hidden;
+	font-family: "Lilita One", sans-serif;
+	text-transform: uppercase;
+
+	.marquee--inner {
+		width: max-content;
+	}
+	
+	p {
+		color: red;
+		background: black;
+		display: flex;
+		align-items: center;
+		gap: 0.35em;
+		
+		&.outline {
+			color: black;
+			-webkit-text-stroke: 0.05em red;
+		}
+		
+		&:before {
+			content: '';
+			z-index: 1;
+		}
+		&:after {
+			content: '';
+			mask-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' style='fill-rule:evenodd;' viewBox='0 0 30 30'%3E%3Cpath d='M15 0C6.721 0 0 6.721 0 15s6.721 15 15 15 15-6.721 15-15S23.279 0 15 0ZM8.87 14h-.013a3.868 3.868 0 0 0-1.724.406 3.875 3.875 0 0 0-2.125 3.204l-.004.477c.042.485.189.953.461 1.4 1.84 3.487 5.492 5.863 9.693 5.863 4.211 0 7.872-2.389 9.707-5.89a1.001 1.001 0 0 0-1.772-.928c-1.5 2.862-4.492 4.818-7.935 4.818a8.887 8.887 0 0 1-4.429-1.176 14.461 14.461 0 0 0 1.406-2.282c.355-.74.572-1.463.579-2.02v-.027a3.832 3.832 0 0 0-.896-2.459 3.909 3.909 0 0 0-1.449-1.078A3.816 3.816 0 0 0 8.87 14ZM19 11c0-.551.444-1 .992-1 .549 0 .992.449.992 1a1.001 1.001 0 0 0 2 0c0-1.657-1.341-3-2.992-3A2.997 2.997 0 0 0 17 11a1 1 0 0 0 2 0ZM9 11c0-.551.444-1 .992-1 .549 0 .992.449.992 1a1.001 1.001 0 0 0 2 0c0-1.657-1.341-3-2.992-3A2.997 2.997 0 0 0 7 11a1 1 0 0 0 2 0Z'/%3E%3C/svg%3E");
+			mask-repeat: no-repeat;
+			width: 0.65em;
+			aspect-ratio: 1;
+			background: red;
+		}
+	}
+}
+
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(2,minmax(0,1fr));
+	align-items: center;
+}
+
+.left {
+	grid-area: 1/1/-1/2;
+}
+
+.right {
+	grid-area: 1/2/-1/3;
+}
+
+.can {
+	grid-area: 1/1/-1/-1;
+	width: 50vw;
+	max-width: 300px;
+	margin-inline: auto;
+	position: relative;
+}
+
+.bg {
+	grid-area: 1/1/-1/-1;
+	max-width: 700px;
+	margin-inline: auto;
+	position: relative;
+	z-index: -1;
+}
+
+* {
+	margin: 0;
+}
+
+body,html {
+	height: 100%;
+}
+
+body {
+	display: grid;
+}
+
