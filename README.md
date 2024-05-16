@@ -28,6 +28,7 @@ Explore each project individually and view live demos to see them in action:
 | 019 | [Cyber-Truck-Ride](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Cyber-Truck-Ride)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/RwmNbOO)  |
 | 020 | [Background-Text-Marquee](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Background-Text-Marquee)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/KKLpMma)  |
 | 021 | [Card-Reveal-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Card-Reveal-Animation)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/details/KKLpMXW)  |
+| 022 | [Image-Carousel-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Image-Carousel-Animation)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/RwmwPdX)  |
 
 ## Show Your Support
 
