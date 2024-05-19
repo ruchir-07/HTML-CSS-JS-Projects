@@ -29,7 +29,9 @@ Explore each project individually and view live demos to see them in action:
 | 020 | [Background-Text-Marquee](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Background-Text-Marquee)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/KKLpMma)  |
 | 021 | [Card-Reveal-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Card-Reveal-Animation)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/details/KKLpMXW)  |
 | 022 | [Image-Carousel-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Image-Carousel-Animation)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/RwmwPdX)  |
-| 022 | [Card-Hover-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Card-Hover-Animation)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/OJYJwJy)  |
+| 023| [Card-Hover-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Card-Hover-Animation)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/OJYJwJy)  |
+| 024| [Ball-Bounce-Loading](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Ball-Bounce-Loading)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/OJYMXEe)  |
+| 025| [Easy-Comparison-Slider](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Easy-Comparison-Slider)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/GRaoQdM)  |
 
 ## Show Your Support
 
