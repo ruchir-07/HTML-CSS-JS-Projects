@@ -32,6 +32,8 @@ Explore each project individually and view live demos to see them in action:
 | 023| [Card-Hover-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Card-Hover-Animation)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/OJYJwJy)  |
 | 024| [Ball-Bounce-Loading](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Ball-Bounce-Loading)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/OJYMXEe)  |
 | 025| [Easy-Comparison-Slider](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Easy-Comparison-Slider)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/GRaoQdM)  |
+| 025| [CSS-Part-Animatoion](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/CSS-Part-Animatoion)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/eYaJVjq)  |
+| 027| [3D-Image-Carousel](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/3D-Image-Carousel)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/MWdKQqd)  |
 
 ## Show Your Support
 

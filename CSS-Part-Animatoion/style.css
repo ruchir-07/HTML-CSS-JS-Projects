@@ -1,0 +1,125 @@
+
+html,
+body,
+main {
+  --font: "skolar-sans-latin", sans-serif;
+  --really-green: oklch(88.14% 0.203 158.82);
+  --green: oklch(78.59% 0.18 159.1);
+  --black: oklch(22.21% 0 0);
+  --gray: oklch(83.9% 0 0);
+  --speed: 1200ms;
+
+  height: 100%;
+  font-family: var(--font);
+  background-color: var(--black);
+  color: var(--gray);
+
+  & * {
+    font-family: inherit;
+  }
+}
+
+main {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  gap: 88px;
+
+  & article {
+    display: grid;
+    gap: 52px;
+  }
+
+  & h1 {
+    color: var(--green);
+    font-size: 14vw;
+    font-weight: 900;
+  }
+
+  & h2 {
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    letter-spacing: 0.025ch;
+  }
+}
+
+*[letter-animation="breath"] {
+  & > span {
+    display: inline-block;
+    white-space: break-spaces;
+  }
+
+  & > span {
+    animation: breath calc(var(--speed)) ease calc(var(--index) * 100 * 1ms)
+      infinite alternate;
+  }
+}
+
+section {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  place-items: center;
+
+  & div {
+    width: 50vw;
+
+    & span {
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.025ch;
+      position: relative;
+      margin-block-end: 8px;
+    }
+
+    & span:first-of-type {
+      float: left;
+      left: -12px;
+    }
+
+    & span:last-of-type {
+      float: right;
+      right: -12px;
+    }
+  }
+
+  & input[type="range"] {
+    width: 100%;
+  }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: var(--green);
+  height: 0.5rem;
+  border-radius: 12px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -12px;
+  background-color: oklch(22.21% 0 0);
+  border: 1px solid oklch(38% 0 0);
+  border-radius: 8px;
+  height: 2rem;
+  width: 1.25rem;
+}
+
+@keyframes breath {
+  from {
+    animation-timing-function: ease-out;
+  }
+  to {
+    transform: scale(1.25) translateY(-5px) perspective(1px);
+    text-shadow: 0 0 20px var(--really-green);
+    animation-timing-function: ease-in-out;
+  }
+}
