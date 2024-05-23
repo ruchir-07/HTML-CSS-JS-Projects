@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  transition: all 0.5s;
+  text-decoration: none;
+}
+h1 {
+  font-size: 100px;
+  line-height: 120px;
+}
+h2 {
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+}
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.anime-list {
+  margin: 60px 0px 0px;
+  padding: 0px 30px;
+}
+.anime-list .title {
+  text-transform: uppercase;
+  margin: 0px auto 60px;
+  width: fit-content;
+  max-width: 1170px;
+  text-align: center;
+}
+.anime-list ul li {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  padding: 26px 0px;
+  margin: 0px -12px;
+  opacity: 0.4;
+}
+.anime-list ul li::before,
+.anime-list ul li::after {
+  content: "";
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+}
+.anime-list ul li::after {
+  opacity: 1;
+  width: 0%;
+}
+.anime-list ul li:hover {
+  opacity: 1;
+}
+.anime-list ul li:hover::after {
+  width: 100%;
+}
+.anime-list ul li > div:not(.hover-img) {
+  padding: 0px 12px;
+}
+.anime-list .index {
+  width: calc(100% / 12);
+}
+.anime-list .release-year {
+  width: calc((100% / 12) * 2);
+}
+.anime-list .anime-name {
+  width: calc((100% / 12) * 4);
+}
+.anime-list .genere {
+  width: calc((100% / 12) * 4);
+}
+.anime-list .redirect-link {
+  width: calc((100% / 12) * 1);
+}
+.anime-list .redirect-link a {
+  width: 30px;
+  height: 30px;
+  margin: 0px auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  border-radius: 50%;
+  background: var(--white-color);
+}
+.anime-list .redirect-link svg {
+  color: var(--black-color);
+}
+.anime-list .hover-img {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0%;
+  width: 34vw;
+  height: 34vw;
+}
+.anime-list .hover-img img {
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.anime-list li:hover .hover-img img {
+  opacity: 1;
+}
+
+.ball {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  backdrop-filter: invert(1) grayscale(1);
+  -webkit-backdrop-filter: invert(1) grayscale(1);
+  z-index: 99999;
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  h1 {
+    font-size: 90px;
+    line-height: 110px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+  .anime-list .hover-img {
+    width: 38vw;
+    height: 38vw;
+  }
+  .anime-list .hover-img img {
+    border-radius: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .anime-list .title {
+    margin: 0px auto 40px;
+  }
+  .anime-list .hover-img {
+    width: 38vw;
+    height: 38vw;
+  }
+  .anime-list .hover-img img {
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .anime-list {
+    padding: 0px 15px;
+  }
+  .anime-list .title {
+    margin: 0px auto 40px;
+  }
+  .anime-list ul li > div:not(.hover-img) {
+    padding: 0px 8px;
+  }
+  .anime-list .index,
+  .anime-list .genere {
+    display: none;
+  }
+  .anime-list .anime-name {
+    width: calc((100% / 12) * 8);
+  }
+  .anime-list .redirect-link {
+    width: calc((100% / 12) * 2);
+  }
+  .anime-list .hover-img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .anime-list .hover-img img {
+    border-radius: 8px;
+  }
+}
+.title{
+  font-size: 60px;
+}
