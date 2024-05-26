@@ -1,0 +1,152 @@
+:root {
+    --default: #00ffc3;
+    --hover: #efceff;
+    --size: 80px;
+    --distance: calc(var(--size) * -.8);
+    --spring-easing: linear(
+      0, 0.807 3.1%, 1.234 5.2%, 1.391, 1.505, 1.576 8.3%, 1.596, 1.607 9.4%, 1.608,
+      1.606 10.1%, 1.589, 1.557, 1.508 12.3%, 1.393 13.8%, 1.057 17.5%, 0.91 19.6%,
+      0.861, 0.825, 0.801, 0.788 23.4%, 0.787, 0.789, 0.797 25.3%, 0.81 26.1%,
+      0.849 27.6%, 0.969 31.5%, 1.02 33.3%, 1.042, 1.058, 1.068, 1.074 37.6% 38.9%,
+      1.067 40.3%, 1.053 41.9%, 1.011 45.7%, 0.993, 0.98, 0.974 51.7% 53.1%,
+      0.977 54.6%, 1.002 61.8%, 1.007, 1.009 65.7%, 1.008 68.9%, 0.999 75.9%,
+      0.997 79.8%, 1.001 92.7% 100%
+    );
+    --duration: 3s;
+  }
+  
+  .goo,
+  .goo ul {
+    background: inherit;
+    filter: url("#schlurp"); // this is reference to svg filter in HTML.
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    background: inherit;
+    padding: 0 calc(var(--size) / 2);
+    li {
+      width: var(--size);
+      height: var(--size);
+      background: var(--default);
+      margin: 0 3px;
+      color: black;
+      position: relative;
+    }
+  }
+  
+  .goo ul li {
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 100%;
+      background: inherit;
+      transition: all 0.85s ease;
+      transform: translate3d(0, 0, 0); // performance / stability
+      will-change: transform; // performance / stability
+      backface-visibility: hidden; // performance / stability
+    }
+    &.hover:before {
+      transition: all var(--duration) var(--spring-easing);
+      transform: translate3d(0, var(--distance), 0);
+      background: var(--hover);
+    }
+  }
+  
+  .menu {
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    text-align: center;
+    // overflow: hidden;
+  }
+  
+  .menu li {
+    background: transparent;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    transition: all 0.85s ease;
+    height: calc(var(--size) * 2);
+  
+    &:hover {
+      transition: all calc( var(--duration) - 0.2s ) var(--spring-easing);
+      transform: translate3d(0, var(--distance), 0);
+      color: white;
+    }
+  
+    a {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.6);
+      transition: color 0.5s ease;
+      width: 100%;
+      height: 100%;
+    }
+    &:hover a {
+      color: rgba(0, 0, 0, 0.9);
+    }
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background: var(--default);
+    position: fixed;
+    bottom: 250px;
+    left: 0px;
+    right: 0px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* unimportant styles */
+  
+  body {
+    color: white;
+    background: #333844;
+    padding: 20px 0;
+    font-family: "Heebo", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  p {
+    max-width: 70ch;
+    font-weight: 200;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  
+  svg {
+    width: calc(var(--size)/3);
+    height: calc(var(--size)/3);
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
