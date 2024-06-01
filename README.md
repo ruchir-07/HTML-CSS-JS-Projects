@@ -32,12 +32,17 @@ Explore each project individually and view live demos to see them in action:
 | 023| [Card-Hover-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Card-Hover-Animation)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/OJYJwJy)  |
 | 024| [Ball-Bounce-Loading](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Ball-Bounce-Loading)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/OJYMXEe)  |
 | 025| [Easy-Comparison-Slider](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Easy-Comparison-Slider)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/GRaoQdM)  |
-| 025| [CSS-Part-Animatoion](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/CSS-Part-Animatoion)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/eYaJVjq)  |
+| 026| [CSS-Part-Animatoion](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/CSS-Part-Animatoion)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/eYaJVjq)  |
 | 027| [3D-Image-Carousel](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/3D-Image-Carousel)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/MWdKQqd)  |
 | 028| [Hover-Glow-Cards](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Hover-Glow-Cards)                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/mdYPgZy)  |
 | 029| [Image-Hover-Effect](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Image-Hover-Effect  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/abrNxMa)  |
 | 030| [Complete-Order-Button](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Complete-Order-Button  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/eYadRYb)  |
 | 031| [Gooyee-Tab-Switch](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Gooyee-Tab-Switch  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/PovGjqm)  |
+| 032| [Pricing-Section](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Pricing-Section  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/qBGqPgv)  |
+| 033| [Add-To-Cart](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Add-To-Cart  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/bGywopp)  |
+| 034| [Leaping-Loader](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Leaping-Lodaer  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/abrBLYj)  |
+| 035| [Single-Page-Navigation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Single-Page-Navigation  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/mdYRXmv)  |
+| 036| [Unsubscribe-Button](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Unsubscribe-Button  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/QWRdOxQ)  |
 
 ## Show Your Support
 
