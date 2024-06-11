@@ -43,6 +43,11 @@ Explore each project individually and view live demos to see them in action:
 | 034| [Leaping-Loader](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Leaping-Lodaer  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/abrBLYj)  |
 | 035| [Single-Page-Navigation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Single-Page-Navigation  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/mdYRXmv)  |
 | 036| [Unsubscribe-Button](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Unsubscribe-Button  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/QWRdOxQ)  |
+| 037| [Morphing-Play-Button](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Morphing-Play-Button  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/ExzZbMB)  |
+| 038| [Password-Reveal-Animation-2](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Password-Reveal-Animation-2  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/details/gOJgoBj)  |
+| 039| [Running-Mouse-Loader](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Running-Mouse-Loader  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/QWRdOxQ)  |
+| 040| [Product-Card-Layout](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Product-Card-Layout  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/details/GRamvmr)  |
+| 041| [1000-Follower](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/1000-Follower  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/BaedYwY)  |
 
 ## Show Your Support
 
