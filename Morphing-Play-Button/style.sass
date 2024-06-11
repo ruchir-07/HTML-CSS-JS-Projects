@@ -1,0 +1,33 @@
+.overflow
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+
+#play-button-container
+  position: relative
+  top: 100px
+  left: 200px
+  width: 100px
+  height: 100px
+  &:hover
+    cursor: pointer
+  
+#button-circle-svg,
+#play-triangle-svg
+  position: absolute
+  top: 0
+  left: 0
+  
+#youtube-video
+  position: absolute
+  top: 0
+  left: 0
+  opacity: 0
+  pointer-events: none
+  &.-visible
+    pointer-events: auto
+    
+.video-text
+  padding-top: 110px
+  text-align: center
+  font-family: Arial
