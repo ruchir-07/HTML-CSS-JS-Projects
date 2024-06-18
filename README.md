@@ -48,6 +48,8 @@ Explore each project individually and view live demos to see them in action:
 | 039| [Running-Mouse-Loader](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Running-Mouse-Loader  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/QWRdOxQ)  |
 | 040| [Product-Card-Layout](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Product-Card-Layout  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/details/GRamvmr)  |
 | 041| [1000-Follower](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/1000-Follower  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/BaedYwY)  |
+| 042| [Radio-Hop-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Radio-Hop-Animation  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/pomrarq)  |
+| 043| [Great-Grid-Modifier](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Great-Grid-Modifier  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/XWwVRzB)  |
 
 ## Show Your Support
 

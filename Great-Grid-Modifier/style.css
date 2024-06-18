@@ -1,0 +1,170 @@
+@import "https://unpkg.com/open-props" layer(design.system);
+@import "https://unpkg.com/open-props/normalize.min.css" layer(demo.support);
+@import "https://unpkg.com/open-props/buttons.min.css" layer(demo.support);
+
+@layer demo {
+  .container {
+    /* VERY IMPORTANT this is "size" and not "inline-size" */
+    /* it unlocks container aspect ratio queries */
+    container: perfect-bento / size;
+  }
+  
+  .always-great-grid {
+    /* these are all the quantity queries */
+    /* how the grid knows the # of boxes */
+    /* some target the grid itself */
+    /* some target the :first-child */
+    
+    &:has(> :last-child:nth-child(3)) > :first-child {
+      grid-column: span 2;
+    }
+    
+    &:has(> :last-child:nth-child(4)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    &:has(> :last-child:nth-child(5)) > :first-child {
+      grid-column: span 2;
+    }
+    
+    &:has(> :last-child:nth-child(6)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    &:has(> :last-child:nth-child(7)) > :first-child {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    
+    &:has(> :last-child:nth-child(8)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    &:has(> :last-child:nth-child(9)) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    &:has(> :last-child:nth-child(10)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    &:has(> :last-child:nth-child(11)) > :first-child {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    
+    &:has(> :last-child:nth-child(12)) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* here's where the layout is adapted if landscape */
+    @container perfect-bento (orientation: landscape) {
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      
+      &:has(> :last-child:nth-child(3)) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      &:has(> :last-child:nth-child(5)) > :first-child {
+        grid-column: initial;
+        grid-row: span 2;
+      }
+      
+      &:has(> :last-child:nth-child(6)),
+      &:has(> :last-child:nth-child(8)),
+      &:has(> :last-child:nth-child(10)),
+      &:has(> :last-child:nth-child(12)) {
+        grid-template-rows: repeat(2, 1fr);
+      }
+      
+      &:has(> :last-child:nth-child(9)) > :first-child {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+    }
+  }
+}
+
+@layer demo.transitions {
+  /* this makes the view transition (VT) pseudo elements not steal clicks */
+  ::view-transition {
+    pointer-events: none;
+  }
+  
+  /* removes view transition on the page */
+  /* helps isolate the morph effect to the grid */
+  :root {
+    view-transition-name: none;
+  }
+  
+  /* make all the VT animations springy! */
+  ::view-transition-group(*) {
+    animation-timing-function: var(--ease-squish-1);
+    animation-timing-function: var(--ease-spring-2);
+    animation-duration: .75s;
+  }
+  
+  /* this makes the box shape size morphs better */
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    height: 100%;
+    width: 100%;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    /* custom animation for new boxes coming in */
+    /* uses Open Props animation and easing props */
+    /* https://open-props.style/#animations */
+    ::view-transition-new(*):only-child {
+      animation: 
+        var(--animation-slide-in-up) forwards,
+        var(--animation-fade-in) forwards;
+      animation-timing-function: var(--ease-squish-1);
+      animation-timing-function: var(--ease-spring-2);
+    }
+
+    /* custom animation for old boxes going out */
+    ::view-transition-old(*):only-child {
+      animation: 
+        var(--animation-slide-out-down) forwards,
+        var(--animation-fade-out) forwards;
+    }
+  }
+}
+
+@layer demo.support {
+  body {
+    display: grid;
+    place-content: center;
+    padding: var(--size-5);
+    gap: var(--size-5);
+  }
+  
+  footer {
+    display: flex;
+    place-content: center;
+    gap: var(--size-2);
+  }
+  
+  .always-great-grid {
+    display: grid;
+    gap: var(--size-3);
+    padding: var(--size-3);
+  }
+  
+  .box {
+    background: var(--surface-2);
+    border-radius: var(--radius-3);
+  }
+  
+  .container {
+    overflow: hidden;
+    resize: both;
+    
+    display: grid;
+    block-size: min(var(--size-content-2), 50vw);
+    inline-size: min(var(--size-content-2), 50vw);
+    border: 1px solid var(--surface-3);
+  }
+}
