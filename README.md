@@ -50,6 +50,9 @@ Explore each project individually and view live demos to see them in action:
 | 041| [1000-Follower](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/1000-Follower  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/BaedYwY)  |
 | 042| [Radio-Hop-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Radio-Hop-Animation  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/pomrarq)  |
 | 043| [Great-Grid-Modifier](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Great-Grid-Modifier  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/XWwVRzB)  |
+| 044| [Tabbar-Switch-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Tabbar-Switch-Animation  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/XWwVRzB)  |
+| 045| [Click-Button-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Great-Grid-Modifier  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/vYwpmWY)  |
+| 046| [Place-Order-Button](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Place-Order-Button  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/vYwpmWY)  |
 
 ## Show Your Support
 
