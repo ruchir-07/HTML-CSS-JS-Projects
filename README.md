@@ -53,6 +53,9 @@ Explore each project individually and view live demos to see them in action:
 | 044| [Tabbar-Switch-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Tabbar-Switch-Animation  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/XWwVRzB)  |
 | 045| [Click-Button-Animation](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Great-Grid-Modifier  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/vYwpmWY)  |
 | 046| [Place-Order-Button](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Place-Order-Button  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/vYwpmWY)  |
+| 047| [Download-Circular-Button](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Download-Circular-Button  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/VwOxmMd)  |
+| 048| [Toast-Notification](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Toast-Notification  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/rNgqpEr)  |
+| 048| [Pricing-Card](https://github.com/ruchir-07/HTML-CSS-JS-Projects/tree/main/Pricing-Card  )                               | [Live Demo](https://codepen.io/Ruchir-Bajaj/pen/ZENNava)  |
 
 ## Show Your Support
 

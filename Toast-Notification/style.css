@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+	--tr: all 0.5s ease 0s;
+	--ch1: #05478a;
+	--ch2: #0070e0;
+	--cs1: #005e38;
+	--cs2: #03a65a;
+	--cw1: #c24914;
+	--cw2: #fc8621;
+	--ce1: #851d41;
+	--ce2: #db3056;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-direction: column;
+	background: radial-gradient(circle at 50% 100%, #1d2232, #262434);
+	font-family: "Varela Round", sans-serif;
+}
+
+.toast-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: var(--tr);
+	position: absolute;
+	padding: 0 1rem;
+	height: 100%;
+	min-height: 20rem;
+	min-width: 375px;
+}
+
+.toast-item {
+	overflow: hidden;
+	max-height: 25rem;
+	transition: var(--tr);
+	animation: show-toast 4s ease 3s 1;
+}
+
+@keyframes show-toast { 
+	0%, 50%, 100% { max-height: 0; opacity: 0; }
+	10%, 25% { max-height: 15rem; opacity: 1; }
+}
+
+.toast {
+	background-color: #232b2b;
+	background: var(--bg);
+	color: #f5f5f5;
+	padding: 1rem 2rem 1rem 6rem;
+	text-align: center;
+	border-radius: 2rem;
+	position: relative;
+	font-weight: 300;
+	margin: 1.75rem 0 1rem;
+	text-align: left;
+	max-width: 15rem;
+	transition: var(--tr);
+	opacity: 1;
+}
+
+.toast:before {
+	content: "";
+	position: absolute;
+	width: 5.5rem;
+	height: 6rem;
+	--drop: 
+		radial-gradient(circle at 64% 51%, var(--clr) 0.45rem, #fff0 calc(0.45rem + 1px)), /*ball 1*/
+		radial-gradient(circle at 100% 100%, #fff0 0.9rem, var(--clr) calc(0.9rem + 1px) 1.25rem, #fff0 calc(1.25rem + 1px) 100%), /*neck 2*/ 
+		radial-gradient(circle at 0% 0%, #fff0 0.9rem, var(--clr) calc(0.9rem + 1px) 1.25rem, #fff0 calc(1.25rem + 1px) 100%), /*neck 1*/
+		radial-gradient(circle at 0% 120%, var(--clr) 4rem, #fff0 calc(4rem + 1px)) /*big 1*/;
+	background: 
+		radial-gradient(circle at 22% 3.8rem, var(--clr) 0.75rem, #fff0 calc(0.75rem + 1px)), /*ball 8*/ 
+		radial-gradient(circle at 95% 1.9rem, var(--clr) 0.07rem, #fff0 calc(0.07rem + 1px)), /*ball 7*/ 
+		radial-gradient(circle at 80% 2.25rem, var(--clr) 0.18rem, #fff0 calc(0.18rem + 1px)), /*ball 6*/
+		radial-gradient(circle at 80% 75%, var(--clr) 0.35rem, #fff0 calc(0.35rem + 1px)), /*ball 5*/
+		radial-gradient(circle at 43% 2.3rem, var(--clr) 0.07rem, #fff0 calc(0.07rem + 1px)), /*ball 4*/ 
+		radial-gradient(circle at 40% 1rem, var(--clr) 0.12rem, #fff0 calc(0.12rem + 1px)), /*ball 3*/ 
+		radial-gradient(circle at 20% 1.5rem, var(--clr) 0.25rem, #fff0 calc(0.25rem + 1px)), /*ball 2*/
+		var(--drop),
+		#f000;
+	background-repeat: no-repeat;
+	background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 1.625rem 1.625rem, 1.625rem 1.625rem, 100% 100%, 100% 100%;
+	background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, calc(100% - 1.75rem) 2.85rem, calc(100% - 1.75rem) 2.95rem, 0 0, 0 0;
+	bottom: 0rem;
+	left: 0rem;
+	z-index: 0;
+	border-radius: 0 0 0 2rem;
+}
+
+.toast:after {
+	content: "";
+	position: absolute;
+	width: 3.5rem;
+	height: 3.5rem;
+	background: var(--clr);
+	top: -1.75rem;
+	left: 2rem;
+	border-radius: 3rem;
+	padding-top: 0.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.25rem;
+	box-sizing: border-box;
+}
+
+.toast h3 {
+	font-size: 1.35rem;
+	margin: 0;
+	line-height: 1.35rem;
+	font-weight: 300;
+	position: relative;
+}
+
+.toast h3:before,
+.toast-icon:before {
+	border: 0.5rem solid #fff0;
+	width: 0;
+	height: 0;
+	position: absolute;
+	content: "";
+	left: -3.45rem;
+	border-top: 1rem solid var(--clr);
+	border-left: 1rem solid var(--clr);
+	top: -0.4em;
+	transform: rotate(-96deg) skewX(30deg);
+	border-radius: 0.5rem;
+}
+
+.toast p {
+	position: relative;
+	font-size: 0.95rem;
+	z-index: 1;
+	margin: 0.25rem 0 0;
+}
+
+.close {
+	position: absolute;
+	width: 1.35rem;
+	height: 1.35rem;
+	text-align: center;
+	right: 1rem;
+	cursor: pointer;
+	border-radius: 100%;
+}
+
+.close:after {
+	position: absolute;
+	font-family: 'Varela Round', san-serif;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	font-size: 1.8rem;
+	content: "+";
+	transform: rotate(45deg);
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.close:hover {
+	background: #f5f5f5;
+	color: var(--clr);
+}
+
+
+
+
+.toast-item.success {
+	animation-delay: 2s;
+}
+
+.toast-item.warning {
+	animation-delay: 1s;
+}
+
+.toast-item.error {
+	animation-delay: 0s;
+}
+
+
+
+.toast.help {
+	--clr: var(--ch1);
+	--bg: var(--ch2);
+}
+.toast.help:after,
+.icon-help:after {
+	content: "?";
+}
+
+.toast.success {
+	--clr: var(--cs1);
+	--bg: var(--cs2);
+}
+
+.toast.success:after,
+.icon-success:after {
+	content: "L";
+	font-size: 1.7rem;
+	font-weight: bold;
+	padding-bottom: 0.5rem;
+	transform: rotateY(180deg) rotate(-38deg);
+	text-indent: 0.15rem;
+}
+
+.toast.warning {
+	--clr: var(--cw1);
+	--bg: var(--cw2);
+}
+
+.toast.warning:after,
+.icon-warning:after {
+	content: "!";
+	font-weight: bold;
+}
+
+.toast.error {
+	--clr: var(--ce1);
+	--bg: var(--ce2);
+}
+
+.toast.error:after,
+.icon-error:after {
+	content: "+";
+	font-size: 3rem;
+	line-height: 1.2rem;
+	transform: rotate(45deg);
+}
+
+
+.toast.success:before {
+	--drop: radial-gradient(circle at 65% 63%, var(--clr) 0.425rem, #fff0 calc(0.425rem + 1px)), /*ball 1*/ radial-gradient(circle at 70% 125%, #fff0 1rem, var(--clr) calc(1rem + 1px) 1.25rem, #fff0 calc(1.25rem + 1px) 100%), /*neck 2*/ radial-gradient(circle at 30% -25%, #fff0 1rem, var(--clr) calc(1rem + 1px) 1.25rem, #fff0 calc(1.25rem + 1px) 100%), /*neck 1*/ radial-gradient(circle at 20% 120%, var(--clr) 3.5rem, #fff0 calc(3.5rem + 1px)) /*big 1*/;
+	background-position: 0 0.4rem, -0.2rem 3.3rem, 0 0.4rem, -2rem -1.5rem, -0.8rem 0rem, -1rem 0.4rem, 0rem 1.5rem, 1.2rem 0.4rem, calc(100% - 0.75rem) 3.5rem, calc(100% - 0.75rem) 3.75rem, 0 0rem, 0 0rem;
+}
+
+.toast.warning:before {
+	--drop: radial-gradient(circle at 65% 63%, var(--clr) 0.425rem, #fff0 calc(0.425rem + 1px)), /*ball 1*/ radial-gradient(circle at 129% 36%, #fff0 1rem, var(--clr) calc(1rem + 1px) 1.25rem, #fff0 calc(1.25rem + 1px) 100%), /*neck 2*/ radial-gradient(circle at -27% 25%, #fff0 1rem, var(--clr) calc(1rem + 1px) 1.25rem, #fff0 calc(1.25rem + 1px) 100%), /*neck 1*/ radial-gradient(circle at 20% 120%, var(--clr) 3.5rem, #fff0 calc(3.5rem + 1px)) /*big 1*/;
+	background-position: 1.82rem 0.65rem, -1.2rem 1.2rem, -2rem 0.75rem, -3.5rem -1.95rem, -0.5rem -0.55rem, 3rem 4.25rem, 0rem -0.5rem, 1.2rem 0.4rem, calc(100% - 3.9rem) 2.75rem, calc(100% - 3.75rem) 2.75rem, 0 0rem, 0 0rem;
+}
+
+.toast.error:before {
+	--drop: radial-gradient(circle at 65% 63%, var(--clr) 0.425rem, #fff0 calc(0.425rem + 1px)), /*ball 1*/ radial-gradient(circle at 129% 36%, #fff0 1rem, var(--clr) calc(1rem + 1px) 1.25rem, #fff0 calc(1.25rem + 1px) 100%), /*neck 2*/ radial-gradient(circle at -27% 25%, #fff0 1rem, var(--clr) calc(1rem + 1px) 1.25rem, #fff0 calc(1.25rem + 1px) 100%), /*neck 1*/ radial-gradient(circle at 20% 120%, var(--clr) 3.5rem, #fff0 calc(3.5rem + 1px)) /*big 1*/;
+	background-position: 1.75rem 0.75rem, -0.75rem 1.2rem, -1.3rem 0.5rem, -3.5rem -2.5rem, -0.4rem 0rem, 2rem 1.25rem, 0.82rem 1.6rem, 0.5rem 1.65rem, calc(100% - 2.99rem) 3.25rem, calc(100% - 2.75rem) 3rem, 0 0rem, 0 0rem;
+}
+
+
+.toast a {
+	color: #fff;
+}
+
+.toast-item.closed {
+	max-height: 0;
+}
+
+
+
+
+/*** ICONS ***/
+
+.toast-icons {
+	background: #fff1;
+	padding: 1rem 1rem 1.25rem 1rem;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 2rem;
+	gap: 1.5rem;
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.toast-icon {
+	width: 3.75rem;
+	height: 3.75rem;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+}
+
+.toast-icon:before {
+	left: 0.7rem;
+	top: 2.4em;
+	transform: rotate(-96deg) skewX(30deg);
+}
+
+.toast-icon:after {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.icon-error:after {
+	font-size: 3.6rem;
+	line-height: 2rem;
+	font-weight: 500;
+	padding-top: 0.25rem;
+	max-height: 2rem;
+}
+
+
+.icon-help {
+	background: #0070e0;
+	--clr: #0070e0;
+}
+
+.icon-success {
+	background: #03a65a;
+	--clr: #03a65a;
+}
+
+.icon-warning {
+	background: #fc8621;
+	--clr: #fc8621;
+}
+
+.icon-error {
+	background: #db3056;
+	--clr: #db3056;
+}
+
+
+#t-help:checked ~ .toast-panel .toast-item.help,
+#t-success:checked ~ .toast-panel .toast-item.success,
+#t-warning:checked ~ .toast-panel .toast-item.warning,
+#t-error:checked ~ .toast-panel .toast-item.error {
+	max-height: 0;
+	opacity: 0;
+}
+
+input[type=checkbox] {
+	display: none;
+}
